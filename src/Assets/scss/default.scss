@@ -1,0 +1,25 @@
+@import "config.scss";
+
+.navbar {
+  display: block;
+  width: 100%;
+  height: 90px;
+  background-color: $darkGrey;
+  color: $white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-img {
+  margin: 0px !important;
+  background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2571&q=80");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 1080px;
+}
+
+.navigation {
+  width: 240px;
+  height: 100%;
+}
