@@ -8,6 +8,7 @@ import Header from "./Components/headerComponent/header";
 import Footer from "./Components/footerComponent/footer";
 import Homepage from "./Components/pages/homePage";
 import ColourPage from "./Components/pages/colourPage";
+import Typography from "./Components/pages/typography";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       <div className="App">
         <Header />
         <Route exact path="/" component={Homepage} />
-
-        <Route exact path="/ColourPage" component={ColourPage} />
+        <Route exact path="/colourPage" component={ColourPage} />
+        <Route exact path="/typography" component={Typography} />
 
         <Footer />
       </div>

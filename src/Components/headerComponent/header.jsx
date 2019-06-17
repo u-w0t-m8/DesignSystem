@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 //components
 
@@ -9,14 +9,15 @@ class Header extends Component {
     return (
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="#">
+          <Link to="/#">
+            {" "}
             <img
               src="https://picsum.photos/id/145/30/30"
               className="d-inline-block align-top logo"
-              alt=""
+              alt="logo"
             />
             Design System
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler"
@@ -32,23 +33,14 @@ class Header extends Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              {/* <li className="nav-item">
-                <Link to="/">Link</Link>
-              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Colour
-                </a>
+                <Link to="/colourPage">Colour</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Typography
-                </a>
+                <Link to="/typography">Typography</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Layout
-                </a>
+                <Link to="/">Layout</Link>
               </li>
             </ul>
           </div>
