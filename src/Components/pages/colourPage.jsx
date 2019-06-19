@@ -4,13 +4,16 @@ import React, { Component } from "react";
 import ColourPalette from "../colourPalette";
 
 class ColourPage extends Component {
-  //state = {  }
+  renderPalette(label, scss, hexCode) {
+    return <ColourPalette label={label} scss={scss} hexCode={hexCode} />;
+  }
+
   render() {
     return (
       <div className="container">
         <div className="title">
           <div className="banner">
-            <img src="https://picsum.photos/id/283/1110/300" />
+            <img src="https://picsum.photos/id/283/1110/300" alt="banner" />
           </div>
           <h1>Colour</h1>
           <h4>Why is it important?</h4>
@@ -37,10 +40,14 @@ class ColourPage extends Component {
         <div className="title">
           <h2>Report Jazz Colour Palette</h2>
         </div>
-        <div className="content">
-          <ColourPalette />
-          <ColourPalette />
-          <ColourPalette />
+        <div className="content" />
+        <div className="row">
+          {this.renderPalette("Primary Blue", "$primaryBlue;", "#2A81EA")}
+          {this.renderPalette("Primary Orange", "$primaryOrange;", "#EE6831")}
+          {this.renderPalette("Primary Blue", "$primaryBlue;", "#2A81EA")}
+          {this.renderPalette("Primary Orange", "$primaryOrange;", "#EE6831")}
+          {this.renderPalette("Primary Blue", "$primaryBlue;", "#2A81EA")}
+          {this.renderPalette("Primary Orange", "$primaryOrange;", "#EE6831")}
         </div>
       </div>
     );

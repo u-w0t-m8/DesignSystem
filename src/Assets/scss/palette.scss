@@ -1,0 +1,11 @@
+@import "config";
+
+.palette {
+  ul {
+    list-style: none;
+  }
+  color: $white;
+  padding: $standardSpacing;
+  margin-top: $smSpacing;
+  border-radius: $standardSpacing;
+}

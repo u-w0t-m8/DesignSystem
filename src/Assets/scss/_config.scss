@@ -6,6 +6,11 @@ $lightGrey: #e6e6e6;
 $darkGrey: #333;
 $red: #ff1755;
 
+//spacing
+$lgSpacing: 3em;
+$standardSpacing: 1em;
+$smSpacing: 0.25em;
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -24,4 +29,22 @@ body {
   -webkit-transition: $e;
   -moz-transition: $e;
   transition: $e;
+}
+
+//breakpoints
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (min-width: 50em) and (max-width: 64.374em) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  }
 }

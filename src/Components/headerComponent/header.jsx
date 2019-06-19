@@ -9,8 +9,7 @@ class Header extends Component {
     return (
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <Link to="/#">
-            {" "}
+          <Link to="/">
             <img
               src="https://picsum.photos/id/145/30/30"
               className="d-inline-block align-top logo"

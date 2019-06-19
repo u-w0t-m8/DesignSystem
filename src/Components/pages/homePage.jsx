@@ -9,7 +9,7 @@ class Homepage extends Component {
     return (
       <div className="bg-img">
         {/* <img src={bgImg} className="bg-img" /> */}
-        <div className="col-md-3 info-content">
+        <div className="col-lg-4 col-md-6 col-sm-12 info-content">
           <div className="title">
             <h1>Design style guide</h1>
             <h4>A Central source of design information</h4>

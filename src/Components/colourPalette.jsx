@@ -1,29 +1,21 @@
 import React, { Component } from "react";
 
 class ColourPalette extends Component {
-  state = {};
-
-  style = {
-    backgroundColor: "{this.props}"
-  };
-
   constructor(props) {
     super(props);
+    console.log(this.state);
   }
 
   render() {
     return (
-      <div className="palette" style={this.props}>
+      <div
+        className="palette col-md-4"
+        style={{ backgroundColor: this.props.hexCode }}
+      >
+        <h4> label: {this.props.label}</h4>
         <ul>
-          <li>label: Primary Blue </li>
-          <li>scss: $primaryBlue;</li>
-          <li>Hex code: #2A81EA</li>
-        </ul>
-
-        <ul>
-          <li>label: Primary Orange</li>
-          <li>scss: $primaryOrange;</li>
-          <li>Hex code: #EE6831</li>
+          <li>scss: {this.props.scss}</li>
+          <li>Hex code: {this.props.hexCode}</li>
         </ul>
       </div>
     );
