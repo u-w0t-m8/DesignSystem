@@ -1,0 +1,15 @@
+@import "comfig";
+
+footer {
+  .footer-links {
+    background-color: $darkGrey;
+    a {
+      color: $white;
+    }
+  }
+  text-align: center;
+  .footer-copyright {
+    background-color: $black;
+    color: $white;
+  }
+}

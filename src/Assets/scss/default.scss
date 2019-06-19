@@ -1,46 +1,10 @@
+//variable declarations
 @import "config";
+
+//style components
 @import "palette";
 @import "navigation";
 @import "homepageBG";
-
-.info-content {
-  background-color: $white;
-  border-radius: 4px;
-  margin-left: $lgSpacing;
-  padding: $standardSpacing;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-footer {
-  .footer-links {
-    background-color: $darkGrey;
-    a {
-      color: $white;
-    }
-  }
-  text-align: center;
-  .footer-copyright {
-    background-color: $black;
-    color: $white;
-  }
-}
-
-.title {
-  color: $darkGrey;
-  h1 {
-    margin-top: 1em;
-  }
-  .banner {
-    margin: 0;
-    padding: 0;
-  }
-}
-.content {
-  // background-color: #e6e6e6;
-  // border-radius: $standardSpacing;
-  padding-top: 1.25em;
-  font-size: 16px;
-}
+@import "title";
+@import "textComponent";
+@import "footer";
