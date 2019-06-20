@@ -8,7 +8,6 @@ class Footer extends Component {
   render() {
     return (
       <footer className="page-footer font-small darken-3">
-        {/* <div className="row"> */}
         <div className="footer-links col-md-12 py-5">
           <div className="flex-center">
             <Link to="/" className="fb-ic">
@@ -27,7 +26,6 @@ class Footer extends Component {
               <i className="fab fa-pinterest fa-lg white-text fa-2x"> </i>
             </Link>
           </div>
-          {/* </div> */}
         </div>
 
         <div className="footer-copyright text-center py-3">

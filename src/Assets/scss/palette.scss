@@ -1,11 +1,16 @@
 @import "config";
 
 .palette {
+  h5 {
+    font-family: $headerFont7;
+  }
   ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
-  color: $white;
   padding: $standardSpacing;
-  margin-top: $smSpacing;
+  margin-top: $standardSpacing/2;
+  margin-bottom: $standardSpacing/2;
   border-radius: $standardSpacing;
 }

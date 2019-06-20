@@ -1,3 +1,7 @@
+//font imports
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker|Quicksand|Roboto|Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis:700|Josefin+Sans:700|Oswald:700|Raleway:700|Titillium+Web:700&display=swap");
+
 //variables
 $black: #010000;
 $white: #ffffff;
@@ -5,18 +9,37 @@ $white: #ffffff;
 $lightGrey: #e6e6e6;
 $darkGrey: #333;
 $red: #ff1755;
+$lightPrimary: #94c0f4;
 
 //spacing
 $lgSpacing: 3em;
 $standardSpacing: 1em;
 $smSpacing: 0.25em;
+$standard-margin-spacing: 15px;
+//font family
+//decorative text
+$headerFont1: "Permanent Marker", cursive;
+$bodyFont: "Quicksand", sans-serif;
+
+$headerFont3: "Oswald", sans-serif;
+$headerFont4: "Raleway", sans-serif;
+$headerFont5: "Titillium Web", sans-serif;
+$headerFont6: "Dosis", sans-serif;
+$headerFont7: "Josefin Sans", sans-serif;
+
+$decorativeSize1: 4em;
+
+//normal text
+$radius: 4px;
+$standardRadius: $standardSpacing;
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $bodyFont; //"Roboto", sans-serif;
   font-size: 18px;
   color: $black;
   font-weight: 400;
   font-style: normal;
+  min-width: 320px;
 }
 
 @mixin translateY($e) {
@@ -43,7 +66,7 @@ body {
       @content;
     }
   } @else if $point == small {
-    @media (min-width: 37.5em) {
+    @media (max-width: 37.5em) {
       @content;
     }
   }

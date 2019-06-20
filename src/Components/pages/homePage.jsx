@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import bgImg from "../../Assets/images/layers.png";
+//import bgImg from "../../Assets/images/layers.png";
 
 //components
 
@@ -16,11 +16,9 @@ class Homepage extends Component {
           </div>
           <p>
             This design guide is meant to provide consistency across all our
-            current and future projects.
+            current and future projects. (Internal use only.)
           </p>
-          <p>
-            How to use the design page <a>click here</a>
-          </p>
+          <p>How to use the design page</p>
         </div>
       </div>
     );

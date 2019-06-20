@@ -1,17 +1,24 @@
 import React, { Component } from "react";
-
+//Page banner component
 class Banner extends Component {
-  state = { bannerImg: this.state.props };
-
-  constructor(props) {
-    super(props);
-  }
+  state = {
+    bannerImgURL: this.props.bannerImg,
+    title: this.props.title,
+    subheading: this.props.subheading
+  };
 
   render() {
     return (
-      <div>
-        <h1>{this.state.props.title}</h1>
-        <h4>{this.state.props.subtitle}</h4>
+      <div className="title">
+        <div
+          className="banner"
+          style={{ backgroundImage: `url(${this.props.bannerImg})` }}
+        >
+          <div className="title">
+            <h1>{this.props.title}</h1>
+            <h4>{this.props.subheading}</h4>
+          </div>
+        </div>
       </div>
     );
   }

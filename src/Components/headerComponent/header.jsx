@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"; //links won't work if you get rid of the unused
+//import DClogoSM from "../../Assets/images/digitalCarpenterLogosm.png";
+import DClogo from "../../Assets/images/dclogodesktop.png";
 
 //components
 
@@ -11,11 +13,10 @@ class Header extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <Link to="/">
             <img
-              src="https://picsum.photos/id/145/30/30"
+              src={DClogo}
               className="d-inline-block align-top logo"
               alt="logo"
             />
-            Design System
           </Link>
 
           <button
@@ -40,6 +41,9 @@ class Header extends Component {
               </li>
               <li className="nav-item">
                 <Link to="/">Layout</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/howItWorks">How it works</Link>
               </li>
             </ul>
           </div>

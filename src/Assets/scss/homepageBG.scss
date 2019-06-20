@@ -4,9 +4,40 @@
   margin: 0px !important;
   //background-image: url("../images/layers.png");
   background-image: url("../images/tree.jpg");
+  @include breakpoint(small) {
+    background-image: url("../images/brickwall.jpg");
+  }
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 990px;
+}
+
+.info-content {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 4px;
+
+  @include breakpoint(large) {
+    margin-left: $lgSpacing;
+  }
+  @include breakpoint(medium) {
+    margin-left: $lgSpacing;
+  }
+  padding: $standardSpacing;
+
+  h1 {
+    font-family: $headerFont3;
+    font-size: $decorativeSize1;
+
+    @include breakpoint(medium) {
+      font-size: 3.5em;
+    }
+    text-transform: uppercase;
+  }
+
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
