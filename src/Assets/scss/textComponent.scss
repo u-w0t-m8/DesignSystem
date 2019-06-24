@@ -5,6 +5,7 @@
   // border-radius: $standardSpacing;
   padding-top: 1.25em;
   font-size: 16px;
+  position: relative;
 }
 
 .font-component {
@@ -13,14 +14,46 @@
     margin-bottom: $standard-margin-spacing;
   }
   .content-code {
+    display: inline-block;
     background-color: $lightGrey;
     border-radius: $standardRadius;
-    border: 3px solid #d3d3d3;
+    border: 3px solid $lightGrey; //$darkGrey;
     padding: $standardSpacing;
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
+    }
+  }
+}
+
+.quote {
+  padding: 3em;
+  text-align: center;
+  font-size: 2em;
+  font-family: $headerFont1;
+  color: $grey;
+}
+
+.breakpoint-table {
+  overflow-x: scroll;
+  margin-top: $standard-margin-spacing;
+  margin-bottom: $standard-margin-spacing;
+  td {
+    padding: 1em;
+  }
+}
+
+.file-location-component {
+  margin-top: $standard-margin-spacing;
+  margin-bottom: $standard-margin-spacing;
+  border-radius: $standardRadius;
+  background-color: $lightGrey;
+  padding: $standard-margin-spacing;
+  a {
+    color: $darkGrey !important;
+    &:hover {
+      color: $grey;
     }
   }
 }

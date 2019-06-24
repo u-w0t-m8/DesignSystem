@@ -5,16 +5,20 @@
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
+  //background-attachment: fixed;
   .title {
     color: $white;
     position: relative;
     text-align: center;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
-
     top: 30%;
+
     h1 {
       font-family: $headerFont1;
       font-size: $decorativeSize1;
+      @include breakpoint(small) {
+        font-size: 3em;
+      }
     }
   }
 }
@@ -27,5 +31,6 @@
     display: inline-block;
     margin-right: $smSpacing;
   }
+
   padding: $standardSpacing;
 }

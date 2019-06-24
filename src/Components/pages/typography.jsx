@@ -48,7 +48,7 @@ class Typography extends Component {
 
           <div className="content">
             <TypoPalette
-              fontType={"Heading1"}
+              fontType={"Heading 1"}
               ffamily={"'Raleway', sans-serif"}
               transform={"uppercase"}
               fsize={"40px"}
@@ -57,7 +57,7 @@ class Typography extends Component {
               letterSpace={".075em"}
             />
             <TypoPalette
-              fontType={"Heading2"}
+              fontType={"Heading 2"}
               ffamily={"'Raleway', sans-serif"}
               transform={"uppercase"}
               fsize={"36px"}
@@ -66,16 +66,38 @@ class Typography extends Component {
               letterSpace={".075em"}
             />
             <TypoPalette
-              fontType={"Heading3"}
+              fontType={"Heading 3"}
               ffamily={"'Roboto', sans-serif"}
+              transform={"none"}
               fsize={"30px"}
               lheight={"1.15em"}
               letterSpace={"1em"}
             />
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            <p>Body text</p>
+
+            <TypoPalette
+              fontType={"Heading 4"}
+              ffamily={"'Roboto', sans-serif"}
+              transform={"none"}
+              fsize={"24px"}
+              lheight={"1.15em"}
+              letterSpace={"1em"}
+            />
+            <TypoPalette
+              fontType={"Heading 5"}
+              ffamily={"'Roboto', sans-serif"}
+              fsize={"20px"}
+              lheight={"1em"}
+            />
+            <TypoPalette
+              fontType={"Heading 6"}
+              ffamily={"'Roboto Condensed', sans-serif"}
+              fsize={"18px"}
+              fweight={"bold"}
+            />
+            <TypoPalette
+              fontType={"Body Text"}
+              ffamily={"'Roboto', sans-serif"}
+            />
             <p>button</p>
             <p>Caption</p>
             <p>Overline</p>

@@ -9,7 +9,9 @@ import Footer from "./Components/footerComponent/footer";
 import Homepage from "./Components/pages/homePage";
 import ColourPage from "./Components/pages/colourPage";
 import Typography from "./Components/pages/typography";
+import Layout from "./Components/pages/layout";
 import HowItWorks from "./Components/pages/howItWorks";
+import AssetLocation from "./Components/pages/assetLocation";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route path="/colourPage" component={ColourPage} />
         <Route path="/typography" component={Typography} />
+        <Route path="/layout" component={Layout} />
+        <Route path="/assetLocation" component={AssetLocation} />
         <Route path="/howitworks" component={HowItWorks} />
         <Footer />
       </div>

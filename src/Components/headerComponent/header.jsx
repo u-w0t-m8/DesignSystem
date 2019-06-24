@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"; //links won't work if you get rid of the unused
-//import DClogoSM from "../../Assets/images/digitalCarpenterLogosm.png";
 import DClogo from "../../Assets/images/dclogodesktop.png";
 
 //components
 
 class Header extends Component {
-  //state = {  }
   render() {
     return (
       <header>
@@ -40,7 +38,10 @@ class Header extends Component {
                 <Link to="/typography">Typography</Link>
               </li>
               <li className="nav-item">
-                <Link to="/">Layout</Link>
+                <Link to="/layout">Layout</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/assetLocation">Asset Locations</Link>
               </li>
               <li className="nav-item">
                 <Link to="/howItWorks">How it works</Link>

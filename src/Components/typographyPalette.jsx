@@ -1,27 +1,20 @@
 import React, { Component } from "react";
 
-class TypoPalette extends Component {
-  //   state = {
-  //     ffamily: this.props.ffamily,
-  //     transform: this.props.transform,
-  //     fsize: this.props.fsize,
-  //     fweight: this.props.fweight,
-  //     lHeight: this.props.lheight,
-  //     letterSpace: this.props.letterSpace
-  //   };
+//testing
+import Toggle from "../Components/toggle";
 
+class TypoPalette extends Component {
   constructor(props) {
     super(props);
-    let filledArray = new Array(10).fill(null).map(() => ({
+
+    this.state = {
       ffamily: this.props.ffamily,
       transform: this.props.transform,
       fsize: this.props.fsize,
       fweight: this.props.fweight,
       lHeight: this.props.lheight,
       letterSpace: this.props.letterSpace
-    }));
-
-    console.log(filledArray);
+    };
   }
 
   render() {
@@ -30,26 +23,48 @@ class TypoPalette extends Component {
         <div
           className="title"
           style={{
-            fontFamily: this.props.ffamily,
-            textTransform: this.props.transform,
-            fontSize: this.props.fsize,
-            fontWeight: this.props.fweight,
-            lineHeight: this.props.lheight,
-            letterSpace: this.props.letterSpace
+            fontFamily: this.state.ffamily,
+            textTransform: this.state.transform,
+            fontSize: this.state.fsize,
+            fontWeight: this.state.fweight,
+            lineHeight: this.state.lheight,
+            letterSpace: this.state.letterSpace
           }}
         >
           {this.props.fontType}
         </div>
 
         <div className="content-code col-md-12">
-          <ul>
-            <li>font-family: {this.props.ffamily};</li>
-            <li>font-size: {this.props.fsize};</li>
-            <li>text-transform: {this.props.transform};</li>
-            <li>font-weight: {this.props.fweight};</li>
-            <li>line-height: {this.props.lheight};</li>
-            <li>letter-spacing: {this.props.letterSpace};</li>
-          </ul>
+          {this.props.ffamily == null ? (
+            " "
+          ) : (
+            <code>font-family: {this.props.ffamily}; </code>
+          )}
+          {this.props.fsize == null ? (
+            " "
+          ) : (
+            <code>font-size: {this.props.fsize}; </code>
+          )}
+          {this.props.transform == null ? (
+            " "
+          ) : (
+            <code>text-transform: {this.props.transform}; </code>
+          )}
+          {this.props.fweight == null ? (
+            " "
+          ) : (
+            <code>font-weight: {this.props.fweight}; </code>
+          )}
+          {this.props.lHeight == null ? (
+            " "
+          ) : (
+            <code>line-height: {this.props.lheight}; </code>
+          )}
+          {this.props.letterSpace == null ? (
+            " "
+          ) : (
+            <code>letter-spacing: {this.props.letterSpace}; </code>
+          )}
         </div>
       </div>
     );

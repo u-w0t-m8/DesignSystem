@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Toggle extends Component {
-  component(props) {
+  constructor(props) {
     super(props);
     this.state = { isToggleOn: true };
     this.handleClick = this.handleClick.bind(this);
@@ -11,14 +11,13 @@ class Toggle extends Component {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn
     }));
-    //test
     console.log("clicked");
   }
 
   render() {
     return (
       <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? "ON" : "OFF"}
+        {this.state.isToggleOn ? <h4>ON</h4> : <h4>OFF</h4>}
       </button>
     );
   }
