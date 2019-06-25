@@ -29,9 +29,9 @@ class ColourPage extends Component {
       "Light Blue",
       "Pastel Blue",
       "Dark Orange",
-      "orange",
-      "light Orange",
-      "pastel Orange",
+      "Orange",
+      "Light Orange",
+      "Pastel Orange",
       "Error Red",
       "Warning",
       "Success Green",
@@ -98,6 +98,7 @@ class ColourPage extends Component {
           scss={scssCodes[i]}
           hexCode={hexCodes[i]}
           textColour={textColour}
+          key={i}
         />
       );
     }
