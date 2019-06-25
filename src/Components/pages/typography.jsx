@@ -100,7 +100,13 @@ class Typography extends Component {
               ffamily={"'Roboto', sans-serif"}
             />
             <p>button</p>
-            <p>Caption</p>
+
+            <TypoPalette
+              fontType={"Subtext"}
+              ffamily={"'Roboto', sans-serif"}
+              fsize={"0.8em"}
+              color={"#969696"}
+            />
             <p>Overline</p>
           </div>
 

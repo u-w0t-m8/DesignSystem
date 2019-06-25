@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 //testing
-import Toggle from "../Components/toggle";
+// import Toggle from "../Components/toggle";
 
 class TypoPalette extends Component {
   constructor(props) {
@@ -13,7 +13,8 @@ class TypoPalette extends Component {
       fsize: this.props.fsize,
       fweight: this.props.fweight,
       lHeight: this.props.lheight,
-      letterSpace: this.props.letterSpace
+      letterSpace: this.props.letterSpace,
+      textcolor: this.props.textcolor
     };
   }
 
@@ -23,6 +24,7 @@ class TypoPalette extends Component {
         <div
           className="title"
           style={{
+            color: this.props.textcolor,
             fontFamily: this.state.ffamily,
             textTransform: this.state.transform,
             fontSize: this.state.fsize,
@@ -75,6 +77,13 @@ class TypoPalette extends Component {
           ) : (
             <pre>
               <code>letter-spacing: {this.props.letterSpace}; </code>
+            </pre>
+          )}
+          {this.props.textcolor == null ? (
+            " "
+          ) : (
+            <pre>
+              <code>color: {this.props.textcolor}</code>
             </pre>
           )}
         </div>

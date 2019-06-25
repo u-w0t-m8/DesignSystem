@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var minifyCSS = require("gulp-clean-css");
 var rename = require("gulp-rename");
 var changed = require("gulp-changed");
+var concat = require("gulp-concat");
 
 sass.compiler = require("node-sass");
 var scss_src = "./src/Assets/scss/**/*.scss";
@@ -16,6 +17,7 @@ gulp.task("sass", function() {
     .pipe(sass().on("error", sass.logError))
     .pipe(minifyCSS())
     .pipe(rename({ suffix: ".min" }))
+    .pipe(concat("default.min.css"))
     .pipe(changed(scss_dest))
     .pipe(gulp.dest(scss_dest));
 });
