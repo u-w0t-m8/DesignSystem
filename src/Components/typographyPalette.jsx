@@ -38,32 +38,44 @@ class TypoPalette extends Component {
           {this.props.ffamily == null ? (
             " "
           ) : (
-            <code>font-family: {this.props.ffamily}; </code>
+            <pre>
+              <code>font-family: {this.props.ffamily}; </code>
+            </pre>
           )}
           {this.props.fsize == null ? (
             " "
           ) : (
-            <code>font-size: {this.props.fsize}; </code>
+            <pre>
+              <code>font-size: {this.props.fsize}; </code>
+            </pre>
           )}
           {this.props.transform == null ? (
             " "
           ) : (
-            <code>text-transform: {this.props.transform}; </code>
+            <pre>
+              <code>text-transform: {this.props.transform}; </code>
+            </pre>
           )}
           {this.props.fweight == null ? (
             " "
           ) : (
-            <code>font-weight: {this.props.fweight}; </code>
+            <pre>
+              <code>font-weight: {this.props.fweight}; </code>
+            </pre>
           )}
           {this.props.lHeight == null ? (
             " "
           ) : (
-            <code>line-height: {this.props.lheight}; </code>
+            <pre>
+              <code>line-height: {this.props.lheight}; </code>
+            </pre>
           )}
           {this.props.letterSpace == null ? (
             " "
           ) : (
-            <code>letter-spacing: {this.props.letterSpace}; </code>
+            <pre>
+              <code>letter-spacing: {this.props.letterSpace}; </code>
+            </pre>
           )}
         </div>
       </div>

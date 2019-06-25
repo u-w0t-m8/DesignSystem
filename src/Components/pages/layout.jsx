@@ -65,7 +65,7 @@ class Layout extends Component {
             <div className="content">
               <h2>Button layout</h2>
               <p>button variations and purposes</p>
-              <Button />
+              <Button label={"test"} buttonbg={"#ff1755"} />
             </div>
           </div>
         </div>

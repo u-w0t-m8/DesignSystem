@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import ProjectTitle from "../projectTitle";
 import BannerTitle from "../bannerTitle";
 import TypoPalette from "../typographyPalette";
+import FAIcon from "../fontAwesomeCollection";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";
@@ -101,6 +102,11 @@ class Typography extends Component {
             <p>button</p>
             <p>Caption</p>
             <p>Overline</p>
+          </div>
+
+          <div className="font-awesome-icons">
+            <h2>Font Awesome Icons</h2>
+            <FAIcon />
           </div>
         </div>
       </div>

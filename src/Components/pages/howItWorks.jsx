@@ -23,7 +23,14 @@ class HowItWorks extends Component {
               There may be repeating elements or components for every product
             </p>
 
-            <p>link to confluence page</p>
+            <a
+              href="https://digitalcarpenter.atlassian.net/wiki/spaces/FR/pages/836927570/Requirements+-+Draft?atlOrigin=eyJpIjoiMTMyMzRlZmJhYTg5NGViOThiMThkMjcyYzA0N2QzMzgiLCJwIjoiYyJ9"
+              target="_blank"
+            >
+              Confluence requirement page
+            </a>
+
+            <p>More details in link above.</p>
           </div>
         </div>
       </div>
