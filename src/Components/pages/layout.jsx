@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import ProjectTitle from "../projectTitle";
 import BannerTitle from "../bannerTitle";
 import BreakpointTable from "../breakpointLayout";
-import Button from "../button";
+import PillButton from "../buttons/pillButton";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";
@@ -65,7 +65,7 @@ class Layout extends Component {
             <div className="content">
               <h2>Button layout</h2>
               <p>button variations and purposes</p>
-              <Button label={"test"} buttonbg={"#ff1755"} />
+              <PillButton label={"test"} buttonbg={"#ff1755"} />
             </div>
           </div>
         </div>

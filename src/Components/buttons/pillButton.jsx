@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-class Button extends Component {
+class PillButton extends Component {
+  //parsed in styles for button
   style = {
     backgroundColor: this.props.buttonbg,
     border: this.props.bordercolor,
@@ -13,16 +14,21 @@ class Button extends Component {
       label: this.props.label,
       bgColor: this.props.buttonbg
     };
-    console.log("[" + this.state.label + "]");
+    console.log(this.state.label + " " + this.state.bgColor);
   }
+
+  //get initial state of button
   getInitialState() {
     return { hover: false };
   }
+
+  //change background colour upon hover
   toggleHover() {
-    this.setState();
-    // this.setState({ hover: !this.state.hover });
+    //this.setState();
+    //this.setState({ hover: !this.state.hover });
   }
 
+  // render button
   render() {
     return (
       <div
@@ -52,4 +58,4 @@ class Button extends Component {
   }
 }
 
-export default Button;
+export default PillButton;
