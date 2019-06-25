@@ -104,6 +104,7 @@ h2 {
   transition: $e;
 }
 
+$colorLighten: 20%;
 //secondary colour set
 $secondaryColorSet: (
   purple: $purple,
@@ -127,8 +128,8 @@ $secondaryColorSet: (
 );
 
 /* This uses the colors in $secondaryColorSet to create a class for each color that can be used in an icon */
-@each $colorName, $color in $secondaryColorSet {
-  &.i-#{"" + $colorName} {
-    @include icon-color($color, darken($color, 10%));
-  }
-}
+// @each $colorName, $color in $secondaryColorSet {
+//   &.i-#{"" + $colorName} {
+//     @include icon-color($color, darken($color, 10%));
+//   }
+// }

@@ -44,6 +44,11 @@ class ColourPalette extends Component {
               <span>{this.state.hexCode}</span>
             </div>
           </div>
+          <div className="content-code">
+            <code>
+              {this.state.scss}:{this.state.hexCode};
+            </code>
+          </div>
         </div>
       </div>
     );

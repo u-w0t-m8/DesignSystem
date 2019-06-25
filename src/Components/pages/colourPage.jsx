@@ -142,6 +142,10 @@ class ColourPage extends Component {
                 "#000"
               )}
             </div>
+
+            <div className="row">
+              {this.renderPalette("purple", "$purple", "#8472bb", "#fff")}
+            </div>
           </div>
         </div>
       </div>
