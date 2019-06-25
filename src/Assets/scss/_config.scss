@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker|Quicksand|Roboto|Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dosis:700|Josefin+Sans:700|Oswald:700|Raleway:700|Titillium+Web:700&display=swap");
 
-//variables
+/************************************
+
+    C O L O U R  V A R I A B L E S 
+
+*************************************/
 $black: #010000;
 $white: #ffffff;
 
@@ -12,26 +16,37 @@ $darkGrey: #212529; //#333;
 $red: #ff1755;
 $lightPrimary: #94c0f4;
 
-//spacing
+/*************************************
+
+    S P A C I N G
+
+**************************************/
 $lgSpacing: 3em;
 $standardSpacing: 1em;
 $smSpacing: 0.25em;
 $standard-margin-spacing: 15px;
+
+$radius: 4px;
+
 //font family
 //decorative text
+/*************************************
+
+    F O N T  F A M I L I E S
+
+**************************************/
+//DECORATIVE
+$decorativeSize1: 4em;
+
 $headerFont1: "Permanent Marker", cursive;
 $bodyFont: "Quicksand", sans-serif;
-
 $headerFont3: "Oswald", sans-serif;
 $headerFont4: "Raleway", sans-serif;
 $headerFont5: "Titillium Web", sans-serif;
 $headerFont6: "Dosis", sans-serif;
 $headerFont7: "Josefin Sans", sans-serif;
 
-$decorativeSize1: 4em;
-
-//normal text
-$radius: 4px;
+//NORMAL
 $standardRadius: $standardSpacing;
 
 body {
@@ -47,19 +62,12 @@ h1,
 h2 {
   font-family: $headerFont3;
 }
-@mixin translateY($e) {
-  -webkit-transform: translateY($e);
-  -moz-transform: translateY($e);
-  -transform: translateY($e);
-}
 
-@mixin transition($e) {
-  -webkit-transition: $e;
-  -moz-transition: $e;
-  transition: $e;
-}
+/***************************************
+  
+   B R E A K P O I N T    M I X I N S
 
-//breakpoints
+****************************************/
 
 @mixin breakpoint($point) {
   @if $point == large {
@@ -74,5 +82,46 @@ h2 {
     @media (max-width: 37.5em) {
       @content;
     }
+  }
+}
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  -transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition: $e;
+  -moz-transition: $e;
+  transition: $e;
+}
+
+//secondary colour set
+$secondaryColorSet: (
+  purple: $purple,
+  blue: $blueMid,
+  yellow: $yellow,
+  orange: $orange,
+  teal: $teal,
+  green: $green,
+  red: $red,
+  pinkle: $pinkle,
+  grey: $darkGrey,
+  purple-light: lighten($purple, $colorLighten),
+  blue-light: lighten($blueMid, $colorLighten),
+  yellow-light: lighten($yellow, $colorLighten),
+  orange-light: lighten($orange, $colorLighten),
+  teal-light: lighten($teal, $colorLighten),
+  green-light: lighten($green, $colorLighten),
+  red-light: lighten($red, $colorLighten),
+  pinkle-light: lighten($pinkle, $colorLighten),
+  grey-light: lighten($darkGrey, $colorLighten)
+);
+
+/* This uses the colors in $secondaryColorSet to create a class for each color that can be used in an icon */
+@each $colorName, $color in $secondaryColorSet {
+  &.i-#{"" + $colorName} {
+    @include icon-color($color, darken($color, 10%));
   }
 }
