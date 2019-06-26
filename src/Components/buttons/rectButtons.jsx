@@ -9,16 +9,16 @@ class RectangleButtons extends Component {
   state = {};
   render() {
     return (
-      <div
+      <a
+        onMouseEnter={this.toggleHover}
+        onMouseLeave={this.toggleHover}
         className="rekt-button"
         style={{ backgroundColor: this.props.buttonbg }}
       >
-        <div className="label" style={{ color: this.props.textcolor }}>
-          <a onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
-            {this.props.buttonlabel != null ? "" : this.props.label}
-          </a>
-        </div>
-      </div>
+        <span className="label" style={{ color: this.props.textcolor }}>
+          {this.props.buttonlabel != null ? "" : this.props.label}
+        </span>
+      </a>
     );
   }
 }

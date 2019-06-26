@@ -32,19 +32,19 @@ class PillButton extends Component {
   // render button
   render() {
     return (
-      <div
+      <a
+        onMouseEnter={this.toggleHover}
+        onMouseLeave={this.toggleHover}
         className="button"
         style={{
           backgroundColor: this.props.buttonbg,
           color: this.props.textColour
         }}
       >
-        <div className="label">
-          <a onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
-            {this.props.buttonlabel != null ? "" : this.props.label}
-          </a>
-        </div>
-      </div>
+        <span className="label">
+          {this.props.buttonlabel != null ? "" : this.props.label}
+        </span>
+      </a>
     );
   }
 }
