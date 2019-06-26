@@ -12,6 +12,8 @@
   .title {
     margin-top: $standard-margin-spacing;
     margin-bottom: $standard-margin-spacing;
+    height: 50px;
+    text-anchor: middle;
   }
   .content-code {
     display: inline-block;
