@@ -26,6 +26,7 @@ class PillButton extends Component {
   toggleHover() {
     //this.setState();
     //this.setState({ hover: !this.state.hover });
+    //this.getInitialState({ hover: true });
   }
 
   // render button
@@ -35,20 +36,10 @@ class PillButton extends Component {
         className="button"
         style={{
           backgroundColor: this.props.buttonbg,
-          color: this.props.textColour,
-          borderRadius: "50px",
-          maxWidth: "200px",
-          margin: "0.5em"
+          color: this.props.textColour
         }}
       >
-        <div
-          className="label"
-          style={{
-            padding: "1em",
-            textAlign: "center",
-            textTransform: "uppercase"
-          }}
-        >
+        <div className="label">
           <a onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
             {this.props.buttonlabel != null ? "" : this.props.label}
           </a>

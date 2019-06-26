@@ -13,7 +13,7 @@ class RectangleButtons extends Component {
         className="rekt-button"
         style={{ backgroundColor: this.props.buttonbg }}
       >
-        <div className="label">
+        <div className="label" style={{ color: this.props.textcolor }}>
           <a onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
             {this.props.buttonlabel != null ? "" : this.props.label}
           </a>

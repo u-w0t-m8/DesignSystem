@@ -4,6 +4,7 @@ import ProjectTitle from "../projectTitle";
 import BannerTitle from "../bannerTitle";
 import BreakpointTable from "../breakpointLayout";
 import PillButton from "../buttons/pillButton";
+import RektButton from "../buttons/rectButtons";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";
@@ -65,7 +66,8 @@ class Layout extends Component {
             <div className="content">
               <h2>Button layout</h2>
               <p>button variations and purposes</p>
-              <PillButton label={"test"} buttonbg={"#ff1755"} />
+              <PillButton label={"test"} buttonbg={"#ff1755"} color={"#fff"} />
+              <RektButton label={"test"} buttonbg={"#2e9ac5"} color={"#fff"} />
             </div>
           </div>
         </div>
