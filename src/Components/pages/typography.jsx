@@ -48,88 +48,64 @@ class Typography extends Component {
           />
 
           <div className="content">
-            <div className="row">
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Heading 1"}
-                  ffamily={"'Raleway', sans-serif"}
-                  transform={"uppercase"}
-                  fsize={"40px"}
-                  fweight={"700"}
-                  lheight={"1.25em"}
-                  letterSpace={".075em"}
-                />
-              </div>
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Heading 2"}
-                  ffamily={"'Raleway', sans-serif"}
-                  transform={"uppercase"}
-                  fsize={"36px"}
-                  fweight={"600"}
-                  lheight={"1.25em"}
-                  letterSpace={".075em"}
-                />
-              </div>
-            </div>
+            <TypoPalette
+              fontType={"Heading 1"}
+              ffamily={"'Raleway', sans-serif"}
+              transform={"uppercase"}
+              fsize={"40px"}
+              fweight={"700"}
+              lheight={"1.25em"}
+              letterSpace={".075em"}
+            />
+            <TypoPalette
+              fontType={"Heading 2"}
+              ffamily={"'Raleway', sans-serif"}
+              transform={"uppercase"}
+              fsize={"36px"}
+              fweight={"600"}
+              lheight={"1.25em"}
+              letterSpace={".075em"}
+            />
 
-            <div className="row">
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Heading 3"}
-                  ffamily={"'Roboto', sans-serif"}
-                  transform={"none"}
-                  fsize={"30px"}
-                  lheight={"1.15em"}
-                  letterSpace={"1em"}
-                />
-              </div>
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Heading 4"}
-                  ffamily={"'Roboto', sans-serif"}
-                  transform={"none"}
-                  fsize={"24px"}
-                  lheight={"1.15em"}
-                  letterSpace={"1em"}
-                />
-              </div>
-            </div>
+            <TypoPalette
+              fontType={"Heading 3"}
+              ffamily={"'Roboto', sans-serif"}
+              transform={"none"}
+              fsize={"30px"}
+              lheight={"1.15em"}
+              letterSpace={"1em"}
+            />
+            <TypoPalette
+              fontType={"Heading 4"}
+              ffamily={"'Roboto', sans-serif"}
+              transform={"none"}
+              fsize={"24px"}
+              lheight={"1.15em"}
+              letterSpace={"1em"}
+            />
 
-            <div className="row">
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Heading 5"}
-                  ffamily={"'Roboto', sans-serif"}
-                  fsize={"20px"}
-                  lheight={"1em"}
-                />
-              </div>
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Heading 6"}
-                  ffamily={"'Roboto Condensed', sans-serif"}
-                  fsize={"18px"}
-                  fweight={"bold"}
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Body Text"}
-                  ffamily={"'Roboto', sans-serif"}
-                />
-              </div>
-              <div className="col-md-6">
-                <TypoPalette
-                  fontType={"Subtext"}
-                  ffamily={"'Roboto', sans-serif"}
-                  fsize={"0.8em"}
-                  textcolor={"#969696"}
-                />
-              </div>
-            </div>
+            <TypoPalette
+              fontType={"Heading 5"}
+              ffamily={"'Roboto', sans-serif"}
+              fsize={"20px"}
+              lheight={"1em"}
+            />
+            <TypoPalette
+              fontType={"Heading 6"}
+              ffamily={"'Roboto Condensed', sans-serif"}
+              fsize={"18px"}
+              fweight={"bold"}
+            />
+            <TypoPalette
+              fontType={"Body Text"}
+              ffamily={"'Roboto', sans-serif"}
+            />
+            <TypoPalette
+              fontType={"Subtext"}
+              ffamily={"'Roboto', sans-serif"}
+              fsize={"0.8em"}
+              textcolor={"#969696"}
+            />
             <p>button</p>
 
             <p>Overline</p>

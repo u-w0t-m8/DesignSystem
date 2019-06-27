@@ -40,9 +40,9 @@ class AssetLocation extends Component {
           <div className="file-location-component">
             <span>
               <i className="far fa-folder" />{" "}
-              <a href="" target="_blank">
-                File asset location for periskope
-              </a>
+              {/* <a href="#" target="_blank" rel="noopener noreferrer"> */}
+              File asset location for periskope
+              {/* </a> */}
             </span>
           </div>
         </div>
