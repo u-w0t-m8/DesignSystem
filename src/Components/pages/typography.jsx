@@ -21,6 +21,26 @@ class Typography extends Component {
         />
         <div className="container">
           <div className="content">
+            <div className="emphasis-styles">
+              <h2>Emphasis styles</h2>
+              <p>
+                Hierarchy is used to guide the reader's eye to what is most
+                important.
+              </p>
+              <p>
+                When establishing Hierarchy higher level items are usually
+                larger bolder or different in some way. Don't over use fonts
+                either keep it simple. Stick to a few complimentary styles.
+              </p>
+              <p>Combine font styles that are different but complimentary</p>
+              <p>For example:</p>
+              <ul>
+                <li>Sans serif with serif fonts</li>
+                <li>Short fonts with tall fonts</li>
+                <li>Decorative with simple</li>
+              </ul>
+            </div>
+
             <p>
               Common types of fonts and what you need to know about them. Font
               styles alone can convey a mood or message. That's why it's
