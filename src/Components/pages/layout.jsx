@@ -66,8 +66,18 @@ class Layout extends Component {
             <div className="content">
               <h2>Button layout</h2>
               <p>button variations and purposes</p>
-              <PillButton label={"test"} buttonbg={"#ff1755"} color={"#fff"} />
-              <RektButton label={"test"} buttonbg={"#2e9ac5"} color={"#fff"} />
+              <div className="row">
+                <PillButton
+                  label={"Round Pill BUtton"}
+                  buttonbg={"#ff1755"}
+                  color={"#fff"}
+                />
+                <RektButton
+                  label={"rect. button"}
+                  buttonbg={"#2e9ac5"}
+                  color={"#fff"}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -51,18 +51,19 @@ $radius: 4px;
 $decorativeSize1: 4em;
 
 $headerFont1: "Permanent Marker", cursive;
-$bodyFont: "Quicksand", sans-serif;
 $headerFont3: "Oswald", sans-serif;
 $headerFont4: "Raleway", sans-serif;
 $headerFont5: "Titillium Web", sans-serif;
 $headerFont6: "Dosis", sans-serif;
 $headerFont7: "Josefin Sans", sans-serif;
 
+$bodyFont: "Quicksand", sans-serif;
+
 //NORMAL
 $standardRadius: $standardSpacing;
 
 body {
-  font-family: $bodyFont; //"Roboto", sans-serif;
+  font-family: $bodyFont; //"Roboto", sans-serif; //
   font-size: 18px;
   color: $black;
   font-weight: 400;

@@ -3,13 +3,15 @@
 .button {
   padding: $standardSpacing;
   border-radius: 50px;
-  max-width: 200px;
+  min-width: 120px;
   margin: 0.5em;
+  text-align: center;
   .label {
     padding: 0.25em;
     text-align: center;
     text-transform: uppercase;
     color: $white !important;
+    font-family: $bodyFont;
     font-weight: 700;
     letter-spacing: 0.25em;
   }
@@ -17,14 +19,16 @@
 
 .rekt-button {
   padding: $standardSpacing;
-  max-width: 200px;
+  min-width: 120px;
   border-radius: 4px;
   margin: 0.5em;
+  text-align: center;
 
   .label {
     padding: 0.25em;
     text-align: center;
     text-transform: uppercase;
+    font-family: $bodyFont;
     color: $white !important;
     font-weight: 700;
     letter-spacing: 0.25em;
