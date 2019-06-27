@@ -27,6 +27,7 @@ class AssetLocation extends Component {
               <a
                 href="https://drive.google.com/open?id=1HSVms73rXezEyGWjPCDfs48GIvdagvmZ"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 File asset location for ReportJazz
               </a>

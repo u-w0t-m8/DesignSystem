@@ -26,6 +26,7 @@ class HowItWorks extends Component {
             <a
               href="https://digitalcarpenter.atlassian.net/wiki/spaces/FR/pages/836927570/Requirements+-+Draft?atlOrigin=eyJpIjoiMTMyMzRlZmJhYTg5NGViOThiMThkMjcyYzA0N2QzMzgiLCJwIjoiYyJ9"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Confluence requirement page
             </a>
