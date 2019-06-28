@@ -11,6 +11,7 @@ import logo from "../../Assets/images/logoDark.png";
 import bannerImg from "../../Assets/images/typographybanner.jpg";
 
 class Typography extends Component {
+  //Render Icon classes
   renderIcons(iconlabel, iconCollection) {
     return <FAIcon iconlabel={iconlabel} iconCollection={iconCollection} />;
   }
@@ -40,20 +41,24 @@ class Typography extends Component {
       ],
       actionIcons: [
         "far fa-stop-circle",
-        "fas fa-database",
         "far fa-pause-circle",
         "far fa-play-circle",
         "far fa-envelope",
-        "far fa-clone"
+        "far fa-clone",
+        "fas fa-plus",
+        "far fa-trash-alt"
       ],
       actionLabels: [
         "Stop",
-        "Database",
         "Pause",
         "Play",
         "send",
-        "copy action Icon"
-      ]
+        "Copy action",
+        "Add",
+        "Delete"
+      ],
+      projectIcons: ["fas fa-chart-area", "fas fa-database", "far fa-folder"],
+      projectLabels: ["Data chart", "Database", "Project folder"]
     };
   }
 
@@ -188,11 +193,13 @@ class Typography extends Component {
 
           <div className="font-awesome-icons">
             <h2>Font Awesome Icons</h2>
-            <p>
+
+            <p className="content">
               When to use Icons: cons are powerful visual helpers and should be
               used with care. Overuse quickly results in user interfaces that
               are visually overwhelming or distracting.
             </p>
+
             <h3>File Icons</h3>
             <div className="row">
               {this.createIconGroup(
@@ -205,6 +212,13 @@ class Typography extends Component {
               {this.createIconGroup(
                 this.state.actionIcons,
                 this.state.actionLabels
+              )}
+            </div>
+            <h3>Project Icons</h3>
+            <div className="row">
+              {this.createIconGroup(
+                this.state.projectIcons,
+                this.state.projectLabels
               )}
             </div>
           </div>

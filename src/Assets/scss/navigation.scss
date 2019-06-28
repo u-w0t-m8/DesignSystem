@@ -3,7 +3,19 @@
 //styles for header
 .navbar {
   width: 100%;
-  height: 90px;
+  //Web nav height
+  @include breakpoint(medium) {
+    height: 90px;
+  }
+  @include breakpoint(large) {
+    height: 90px;
+  }
+  @include breakpoint(small) {
+    height: 90px;
+  }
+  @include breakpoint(xsmall) {
+    height: 300px;
+  }
   background-color: $darkGrey;
   color: $white;
   margin: 0px;

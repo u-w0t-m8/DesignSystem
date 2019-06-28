@@ -5,10 +5,23 @@ import DClogo from "../../Assets/images/dclogodesktop.png";
 //components
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isToggleOn: true };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
+    console.log("clicked");
+  }
+
   render() {
     return (
       <header>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark bs-navbar-collapse">
           <Link to="/">
             <img
               src={DClogo}
@@ -18,6 +31,7 @@ class Header extends Component {
           </Link>
 
           <button
+            onClick={this.handleClick}
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -26,6 +40,33 @@ class Header extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            {this.state.isToggleOn ? (
+              ""
+            ) : (
+              <div
+                className="collapse navbar-collapse "
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item">
+                    <Link to="/colourPage">Colour</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/typography">Typography</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/layout">Layout</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/assetLocation">Asset Locations</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/howItWorks">How it works</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
+
             <span className="navbar-toggler-icon" />
           </button>
 
