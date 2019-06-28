@@ -4,19 +4,16 @@
 .navbar {
   width: 100%;
   //Web nav height
-  @include breakpoint(medium) {
-    height: 90px;
-  }
-  @include breakpoint(large) {
-    height: 90px;
-  }
-  @include breakpoint(small) {
-    height: 90px;
-  }
-  @include breakpoint(xsmall) {
-    height: 300px;
-  }
-  background-color: $darkGrey;
+  // @include breakpoint(medium) {
+  height: 90px;
+  // }
+  // @include breakpoint(large) {
+  //   height: 90px;
+  // }
+  // @include breakpoint(small) {
+  //   height: 90px;
+  // }
+  background-color: $darkGrey !important;
   color: $white;
   margin: 0px;
   padding: 0px;
