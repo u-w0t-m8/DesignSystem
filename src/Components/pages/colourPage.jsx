@@ -87,11 +87,13 @@ class ColourPage extends Component {
     var textColour = "#fff";
 
     for (let i = 0; i < labels.length; i++) {
+      //If colour is a light colour or red assign it black text else assign it white.
       if (hexCodes[i].includes("F") && !labels[i].includes("Error Red")) {
         textColour = "#000";
       } else {
         textColour = "#fff";
       }
+      //push Colour palette items onto palette array
       palette.push(
         <ColourPalette
           label={labels[i]}

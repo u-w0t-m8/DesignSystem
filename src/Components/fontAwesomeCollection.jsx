@@ -1,18 +1,14 @@
 import React, { Component } from "react";
 
 class FAIcons extends Component {
-  state = {};
   render() {
     return (
       <div>
         <p>Font awesome Icon collection</p>
-        <p>
-          <i className="far fa-file-word" />
-          <i className="far fa-file-pdf" />
+        <p>{this.props.icongroup == null ? "" : this.props.icongroup}</p>
+        <p className="icon-collection">
+          {this.props.iconCollection == null ? "" : this.props.icongroup}
         </p>
-        <pre>
-          <code className="html" />
-        </pre>
       </div>
     );
   }

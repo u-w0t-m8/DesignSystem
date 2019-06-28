@@ -11,6 +11,38 @@ import logo from "../../Assets/images/logoDark.png";
 import bannerImg from "../../Assets/images/typographybanner.jpg";
 
 class Typography extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      iconCollection: [
+        "<i className='far fa-file' />",
+        "<i className='far fa-file-alt' />",
+        "<i className='far fa-file-word' />",
+        "<i className='far fa-file-excel' />",
+        "<i className='far fa-file-pdf' />",
+        "<i className='far fa-file-powerpoint' />",
+        "<i className='far fa-file-code'/>",
+        "<i className='far fa-file-image' />",
+        "<i className='far fa-clone' />"
+      ]
+    };
+  }
+
+  renderIcons(icongroup, iconCollection) {
+    let counter;
+    iconCollection = [];
+    console.log(this.state.iconCollection.length);
+    for (counter = 0; counter < this.state.iconCollection.length; counter++) {
+      iconCollection.push(this.state.iconCollection[counter]);
+      return (
+        <FAIcon
+          icongroup={icongroup}
+          iconCollection={this.state.iconCollection[counter]}
+        />
+      );
+    }
+  }
+
   render() {
     return (
       <div>
@@ -66,7 +98,6 @@ class Typography extends Component {
             logo={logo}
             title={"Report Jazz Typography text collection"}
           />
-
           <div className="content">
             <TypoPalette
               fontType={"Heading 1"}
@@ -133,7 +164,13 @@ class Typography extends Component {
 
           <div className="font-awesome-icons">
             <h2>Font Awesome Icons</h2>
-            <FAIcon />
+            <p>
+              When to use Icons: cons are powerful visual helpers and should be
+              used with care. Overuse quickly results in user interfaces that
+              are visually overwhelming or distracting.
+            </p>
+            {/* <FAIcon icongroup={"File Icons"} /> */}
+            {this.renderIcons("test", this.state.iconCollection)}
           </div>
         </div>
       </div>
