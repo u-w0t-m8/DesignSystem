@@ -6,15 +6,19 @@ class FAIcons extends Component {
       <div>
         <div className="icon-collection">
           <ul>
-            <li>{this.props.iconlabel == null ? "" : this.props.iconlabel}</li>
+            <li className="subtext">
+              {this.props.iconlabel == null ? "" : this.props.iconlabel}
+            </li>
             <li>
               {this.props.iconCollection == null ? (
                 ""
               ) : (
-                <i className={this.props.iconCollection} />
+                <span>
+                  <i className={this.props.iconCollection} />{" "}
+                  <code>{JSON.stringify(this.props.iconCollection)}</code>
+                </span>
               )}
             </li>
-            <li>{JSON.stringify(this.props.iconCollection)}</li>
           </ul>
         </div>
         <p />
