@@ -1,5 +1,18 @@
 @import "config";
 
+h1,
+h2 {
+  font-family: $headerFont3;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+}
+
 .subtext {
   font-family: "Roboto", sans-serif;
   font-size: 0.8em;

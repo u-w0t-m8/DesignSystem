@@ -177,8 +177,9 @@ class Typography extends Component {
               used with care. Overuse quickly results in user interfaces that
               are visually overwhelming or distracting.
             </p>
-            {/* <FAIcon icongroup={"File Icons"} /> */}
+            <h3>File Icons</h3>
             <div className="row">{this.createIconGroup()}</div>
+            <h3>Action Icons</h3>
           </div>
         </div>
       </div>

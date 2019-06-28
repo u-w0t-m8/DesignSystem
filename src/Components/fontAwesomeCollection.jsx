@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class FAIcons extends Component {
   render() {
     return (
-      <div>
+      <div className="icon-component">
         <div className="icon-collection">
           <ul>
             <li className="subtext">
