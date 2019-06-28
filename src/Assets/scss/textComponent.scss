@@ -61,15 +61,10 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: $standard-margin-spacing;
+    margin-bottom: $standard-margin-spacing;
 
-    ul {
-      padding: 0;
-      li {
-        list-style: none;
-      }
-    }
     i {
+      padding-right: 0.5em;
       font-size: $iconSize;
     }
   }

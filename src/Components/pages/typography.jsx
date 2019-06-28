@@ -15,37 +15,53 @@ class Typography extends Component {
     return <FAIcon iconlabel={iconlabel} iconCollection={iconCollection} />;
   }
 
-  createIconGroup = () => {
-    let iconCollection = [
-      "far fa-file",
-      "far fa-file-alt",
-      "far fa-file-word",
-      "far fa-file-excel",
-      "far fa-file-pdf",
-      "far fa-file-powerpoint",
-      "far fa-file-code",
-      "far fa-file-image",
-      "far fa-clone"
-    ];
-    let iconLabels = [
-      "file",
-      "file alternative",
-      "word icon",
-      "Excel icon",
-      "pdf icon",
-      "powerpoint icon",
-      "code file icon",
-      "image icon",
-      "copy action Icon"
-    ];
+  constructor(props) {
+    super(props);
+    this.state = {
+      iconCollection: [
+        "far fa-file",
+        "far fa-file-alt",
+        "far fa-file-word",
+        "far fa-file-excel",
+        "far fa-file-pdf",
+        "far fa-file-powerpoint",
+        "far fa-file-code",
+        "far fa-file-image"
+      ],
+      iconLabels: [
+        "Generic file",
+        "Text file",
+        "Word file",
+        "Excel file",
+        "Pdf file",
+        "Powerpoint file",
+        "Code file file",
+        "Image file"
+      ],
+      actionIcons: [
+        "far fa-stop-circle",
+        "fas fa-database",
+        "far fa-pause-circle",
+        "far fa-play-circle",
+        "far fa-envelope",
+        "far fa-clone"
+      ],
+      actionLabels: [
+        "Stop",
+        "Database",
+        "Pause",
+        "Play",
+        "send",
+        "copy action Icon"
+      ]
+    };
+  }
+
+  createIconGroup = (array1, array2) => {
     let iconGroup = [];
-    for (let i = 0; i < iconCollection.length; i++) {
+    for (let i = 0; i < array1.length; i++) {
       iconGroup.push(
-        <FAIcon
-          iconlabel={iconLabels[i]}
-          iconCollection={iconCollection[i]}
-          key={i}
-        />
+        <FAIcon iconlabel={array2[i]} iconCollection={array1[i]} key={i} />
       );
     }
     return iconGroup;
@@ -178,8 +194,19 @@ class Typography extends Component {
               are visually overwhelming or distracting.
             </p>
             <h3>File Icons</h3>
-            <div className="row">{this.createIconGroup()}</div>
+            <div className="row">
+              {this.createIconGroup(
+                this.state.iconCollection,
+                this.state.iconLabels
+              )}
+            </div>
             <h3>Action Icons</h3>
+            <div className="row">
+              {this.createIconGroup(
+                this.state.actionIcons,
+                this.state.actionLabels
+              )}
+            </div>
           </div>
         </div>
       </div>
