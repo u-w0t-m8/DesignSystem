@@ -56,8 +56,16 @@
 }
 
 .icon-collection {
+  display: flex;
+  flex-wrap: wrap;
+  ul {
+    li {
+      list-style: none;
+    }
+  }
   i {
-    padding-right: 1em;
+    // padding-right: 1em;
     font-size: $iconSize;
+    color: $red; //testing
   }
 }

@@ -11,37 +11,45 @@ import logo from "../../Assets/images/logoDark.png";
 import bannerImg from "../../Assets/images/typographybanner.jpg";
 
 class Typography extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      iconCollection: [
-        "<i className='far fa-file' />",
-        "<i className='far fa-file-alt' />",
-        "<i className='far fa-file-word' />",
-        "<i className='far fa-file-excel' />",
-        "<i className='far fa-file-pdf' />",
-        "<i className='far fa-file-powerpoint' />",
-        "<i className='far fa-file-code'/>",
-        "<i className='far fa-file-image' />",
-        "<i className='far fa-clone' />"
-      ]
-    };
+  renderIcons(iconlabel, iconCollection) {
+    return <FAIcon iconlabel={iconlabel} iconCollection={iconCollection} />;
   }
 
-  renderIcons(icongroup, iconCollection) {
-    let counter;
-    iconCollection = [];
-    console.log(this.state.iconCollection.length);
-    for (counter = 0; counter < this.state.iconCollection.length; counter++) {
-      iconCollection.push(this.state.iconCollection[counter]);
-      return (
+  createIconGroup = () => {
+    let iconCollection = [
+      "far fa-file",
+      "far fa-file-alt",
+      "far fa-file-word",
+      "far fa-file-excel",
+      "far fa-file-pdf",
+      "far fa-file-powerpoint",
+      "far fa-file-code",
+      "far fa-file-image",
+      "far fa-clone"
+    ];
+    let iconLabels = [
+      "file",
+      "file alternative",
+      "word icon",
+      "Excel icon",
+      "pdf icon",
+      "powerpoint icon",
+      "code file icon",
+      "image icon",
+      "copy action Icon"
+    ];
+    let iconGroup = [];
+    for (let i = 0; i < iconCollection.length; i++) {
+      iconGroup.push(
         <FAIcon
-          icongroup={icongroup}
-          iconCollection={this.state.iconCollection[counter]}
+          iconlabel={iconLabels[i]}
+          iconCollection={iconCollection[i]}
+          key={i}
         />
       );
     }
-  }
+    return iconGroup;
+  };
 
   render() {
     return (
@@ -170,7 +178,7 @@ class Typography extends Component {
               are visually overwhelming or distracting.
             </p>
             {/* <FAIcon icongroup={"File Icons"} /> */}
-            {this.renderIcons("test", this.state.iconCollection)}
+            <div className="row">{this.createIconGroup()}</div>
           </div>
         </div>
       </div>
