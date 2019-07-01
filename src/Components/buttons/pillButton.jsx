@@ -12,7 +12,8 @@ class PillButton extends Component {
     super(props);
     this.state = {
       label: this.props.label,
-      bgColor: this.props.buttonbg
+      bgColor: this.props.buttonbg,
+      hover: false
     };
     console.log(this.state.label + " " + this.state.bgColor);
   }

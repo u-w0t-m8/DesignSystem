@@ -7,6 +7,7 @@
   margin: 0.5em;
   text-align: center;
   .label {
+    font-family: $rjbodyFont;
     padding: 0.25em;
     text-align: center;
     text-transform: uppercase;
@@ -25,6 +26,7 @@
   text-align: center;
 
   .label {
+    font-family: $rjbodyFont;
     padding: 0.25em;
     text-align: center;
     text-transform: uppercase;
@@ -33,4 +35,30 @@
     font-weight: 700;
     letter-spacing: 0.25em;
   }
+}
+
+//ISSA SNACC MIXIN
+@mixin snacc-bar($bgColor) {
+  font-family: $rjbodyFont;
+  background-color: $bgColor;
+  border-radius: $radius;
+  color: $white;
+  height: 48px;
+  width: 344px;
+  padding: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  // text-transform: uppercase;
+}
+
+.snacc-bar-success {
+  @include snacc-bar($green);
+}
+
+.snacc-bar-error {
+  @include snacc-bar($red);
+}
+
+.snacc-bar-info {
+  @include snacc-bar($darkGrey);
 }

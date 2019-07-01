@@ -32,6 +32,10 @@ class HowItWorks extends Component {
             </a>
 
             <p>More details in link above.</p>
+
+            <div className="row">
+              <div className="placeholder">Placeholder</div>
+            </div>
           </div>
         </div>
       </div>

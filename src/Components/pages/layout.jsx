@@ -25,7 +25,7 @@ class Layout extends Component {
             <h2>Grid</h2>
             <ul>
               <li>web: 8dp units</li>
-              <li> mobile; 4dp units</li>
+              <li> mobile: 4dp units</li>
             </ul>
 
             <p>
@@ -48,6 +48,15 @@ class Layout extends Component {
             </p>
 
             <h2>Shape</h2>
+            <p>
+              Material surfaces have a rectangular shape by default, with 4dp
+              rounded corners. Their shape can be customized by adjusting their:{" "}
+            </p>
+            <ul>
+              <li>Corner angles and curves</li>
+              <li>Edge angles and curves</li>
+            </ul>
+            <p>The size of shape changes can be subtle or more significant.</p>
 
             <h2>Spacing</h2>
             <BreakpointTable />
@@ -77,6 +86,20 @@ class Layout extends Component {
                   buttonbg={"#2e9ac5"}
                   color={"#fff"}
                 />
+              </div>
+            </div>
+
+            <div className="content">
+              <h2>Snacc bars</h2>
+              <div className="row">
+                <div className="snacc-bar-success">Success</div>
+              </div>
+
+              <div className="row">
+                <div className="snacc-bar-error">Error</div>
+              </div>
+              <div className="row">
+                <div className="snacc-bar-info">Single line snack bar</div>
               </div>
             </div>
           </div>

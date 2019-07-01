@@ -73,3 +73,16 @@
     }
   }
 }
+
+//placeholder
+.placeholder {
+  background-color: $lightPrimary;
+  width: 100%;
+  padding-top: 30%;
+  padding-bottom: 30%;
+  text-align: center;
+  margin-bottom: $standard-margin-spacing;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: $standardSpacing;
+}

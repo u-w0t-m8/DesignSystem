@@ -135,6 +135,29 @@ class ColourPage extends Component {
               formulas/combinations that optimises the aesthetic of colour
               usage.
             </p>
+            <h2>Do's and Don'ts</h2>
+            <p>
+              Consistent - colour should be applied throught a UI consistently
+              and be compatible with the brand it represents
+            </p>
+            <p>
+              Distinct - Create distinction between elements with sufficient
+              contrast between them.
+            </p>
+            <p>
+              Intentional - Colour should be applied purposefully as it can
+              convey meaning in multiple ways, such as relationships between
+              elements and degrees of hierarchy.
+            </p>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="placeholder">placeholder</div>
+              </div>
+              <div className="col-md-6">
+                <div className="placeholder">placeholder</div>
+              </div>
+            </div>
           </div>
 
           <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
