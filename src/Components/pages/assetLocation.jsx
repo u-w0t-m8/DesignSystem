@@ -36,7 +36,7 @@ class AssetLocation extends Component {
             </span>
           </div>
 
-          <ProjectTitle title={"PERISKOPE"} />
+          {/* <ProjectTitle title={"PERISKOPE"} /> */}
 
           {/*Test code*/}
           <div className="file-location-component">

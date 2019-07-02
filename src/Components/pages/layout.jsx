@@ -87,12 +87,12 @@ class Layout extends Component {
                 <RektButton
                   label={"rect. button"}
                   buttonbg={"#2e9ac5"}
-                  color={"#fff !important"}
+                  color={"#ffffff"}
                 />
                 <RektButton
                   label={"rect 2 button"}
                   bordercolor={"#212529"}
-                  color={"#000"}
+                  color={"#000000"}
                 />
               </div>
             </div>

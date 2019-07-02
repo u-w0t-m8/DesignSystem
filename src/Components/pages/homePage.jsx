@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import bgImg from "../../Assets/images/layers.png";
 
 //components
+import FormComponent from "../formComponent";
 
 class Homepage extends Component {
   //state = {  }
@@ -19,6 +20,7 @@ class Homepage extends Component {
             current and future projects. (Internal use only.)
           </p>
           <p>How to use the design page</p>
+          <FormComponent />
         </div>
       </div>
     );

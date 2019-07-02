@@ -15,7 +15,6 @@ class PillButton extends Component {
       bgColor: this.props.buttonbg,
       hover: false
     };
-    //console.log(this.state.label + " " + this.state.bgColor);
   }
 
   //get initial state of button
