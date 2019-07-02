@@ -104,6 +104,7 @@ class ColourPage extends Component {
         />
       );
     }
+    //return array of colourpalette
     return palette;
   };
 
@@ -125,15 +126,19 @@ class ColourPage extends Component {
             <p>
               When adding colour to any design readability is the most
               important. Your colours should be legible and easy on the eyes.
-              That can mean not using colour in every detail. Neutral colours
-              like black, white and grey can help balance your design, so when
-              you use colour it really stands out. Every colour sends a message.
-              Consider the tone of your project and choose a colour palette that
-              fits. e.g. Bright colours usually reflect a fun modern vibe
-              desaturated colours often appear more business like There are no
-              strict rules when it comes to applying colours, however there are
-              formulas/combinations that optimises the aesthetic of colour
-              usage.
+              That can mean not using colour in every detail.
+            </p>
+            <p>
+              Neutral colours like black, white and grey can help balance your
+              design, so when you use colour it really stands out.
+            </p>
+            <p>
+              Every colour sends a message. Consider the tone of your project
+              and choose a colour palette that fits. e.g. Bright colours usually
+              reflect a fun modern vibe desaturated colours often appear more
+              business like There are no strict rules when it comes to applying
+              colours, however there are formulas/combinations that optimises
+              the aesthetic of colour usage.
             </p>
             <h2>Do's and Don'ts</h2>
             <p>
@@ -152,10 +157,15 @@ class ColourPage extends Component {
 
             <div className="row">
               <div className="col-md-6">
-                <div className="placeholder">placeholder</div>
+                <div className="placeholder">
+                  <p>placeholder Dark text on light colours</p>
+                  <p>text with contrasting bg colour</p>
+                </div>
               </div>
               <div className="col-md-6">
-                <div className="placeholder">placeholder</div>
+                <div className="placeholder">
+                  placeholder light text on light colours
+                </div>
               </div>
             </div>
           </div>

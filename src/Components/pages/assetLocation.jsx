@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import ProjectTitle from "../projectTitle";
 import BannerTitle from "../bannerTitle";
 import logo from "../../Assets/images/logoDark.png";
-//import bannerImg from "../../Assets/images/illustration.jpg";
 import bannerImg from "../../Assets/images/bouquet.jpg";
 
 class AssetLocation extends Component {
@@ -20,6 +19,9 @@ class AssetLocation extends Component {
         />
 
         <div className="container">
+          <div className="row">
+            <div className="placeholder">Placeholder</div>
+          </div>
           <ProjectTitle logo={logo} />
           <div className="file-location-component">
             <span>

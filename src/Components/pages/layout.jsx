@@ -11,7 +11,10 @@ import logo from "../../Assets/images/logoDark.png";
 import bannerImg from "../../Assets/images/layout.jpg";
 
 class Layout extends Component {
-  //state = {  }
+  constructor(props) {
+    super(props);
+    console.log("layout page");
+  }
   render() {
     return (
       <div>
@@ -67,7 +70,7 @@ class Layout extends Component {
               <p>Box shadow properties for report jazz</p>
               <div className="font-component">
                 <div className="content-code">
-                  <code>box-shadow: 0px 3px 6px #000;</code>
+                  <code>box-shadow: 3px 3px 3px $lightGrey;</code>
                 </div>
               </div>
             </div>
@@ -77,7 +80,7 @@ class Layout extends Component {
               <p>button variations and purposes</p>
               <div className="row">
                 <PillButton
-                  label={"Round Pill BUtton"}
+                  label={"Round Pill Button"}
                   buttonbg={"#ff1755"}
                   color={"#fff"}
                 />

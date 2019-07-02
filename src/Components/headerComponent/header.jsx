@@ -1,22 +1,28 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"; //links won't work if you get rid of the unused
 import DClogo from "../../Assets/images/dclogodesktop.png";
+// import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from "react-bootstrap";
 
 //components
-
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = { isToggleOn: true };
+    this.state = { isToggleOn: true, isOpen: false };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
     this.setState(state => ({
-      isToggleOn: !state.isToggleOn
+      isToggleOn: !state.isToggleOn,
+      isOpen: !state.isOpen
     }));
-    console.log("clicked");
+    console.log("this has been clicked");
   }
+
+  toggleCollapse = () => {
+    console.log("test");
+    this.setState({ isOpen: !this.state.isOpen });
+  };
 
   render() {
     return (
