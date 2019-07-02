@@ -1,0 +1,67 @@
+@import "config";
+
+//Collection of mixins
+/***************************************
+  
+   B R E A K P O I N T    M I X I N S
+
+****************************************/
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    // @media (min-width: 64.375em) {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == medium {
+    //@media (min-width: 50em) and (max-width: 64.374em) {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == small {
+    // @media (max-width: 37.5em) {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == xsmall {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  -transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition: $e;
+  -moz-transition: $e;
+  transition: $e;
+}
+
+//ISSA SNACC MIXIN
+@mixin snacc-bar($bgColor) {
+  font-family: $rjbodyFont;
+  background-color: $bgColor;
+  border-radius: $radius;
+  color: $white;
+  min-height: 48px;
+  width: 344px;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  font-size: 14px;
+  // text-transform: uppercase;
+}
+
+//mixins for examples
+
+@mixin exN($bgColor, $textColor) {
+  background-color: $bgColor;
+  color: $textColor;
+  padding: $standardSpacing;
+  width: 100%;
+}

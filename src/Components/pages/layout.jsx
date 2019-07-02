@@ -67,7 +67,7 @@ class Layout extends Component {
             <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
             <div className="content">
               <h2>Box Shadow</h2>
-              <p>Box shadow properties for report jazz</p>
+              <p>Universal box shadow properties for report jazz</p>
               <div className="font-component">
                 <div className="content-code">
                   <code>box-shadow: 3px 3px 3px $lightGrey;</code>
@@ -82,11 +82,19 @@ class Layout extends Component {
                 <PillButton
                   label={"Round Pill Button"}
                   buttonbg={"#ff1755"}
+                  bordercolor={"#ff1755"}
                   color={"#fff"}
+                />
+                <PillButton
+                  label={"Round Pill Empty"}
+                  buttonbg={"rgba(255,255,255,0)"}
+                  bordercolor={"#ee6831"}
+                  color={"#ee6831"}
                 />
                 <RektButton
                   label={"rect. button"}
                   buttonbg={"#2e9ac5"}
+                  bordercolor={"#2e9ac5"}
                   color={"#ffffff"}
                 />
                 <RektButton

@@ -6,10 +6,10 @@ class RectangleButtons extends Component {
     border: this.props.bordercolor,
     color: this.props.color
   };
-  constructor(props) {
-    super(props);
-    console.log(this.props.color);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   console.log(this.props.color);
+  // }
   render() {
     return (
       <a

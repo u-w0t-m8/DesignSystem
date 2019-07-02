@@ -10,7 +10,7 @@ class FormComponent extends Component {
       formControls: {
         name: {
           value: "",
-          placeholder: "What is your name"
+          placeholder: "example@email.com"
         }
       }
     };

@@ -1,7 +1,6 @@
 //font imports
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker|Quicksand|Roboto|Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dosis:700|Josefin+Sans:700|Oswald:700|Raleway:700|Titillium+Web:700&display=swap");
-
 /************************************
 
     C O L O U R  V A R I A B L E S 
@@ -21,6 +20,7 @@ $blueMid: #3a6493;
 $teal: #2e9ac5;
 $yellow: #f7c85f; //#e2b42a;
 $orange: #ee6831; //#c57a29;
+$darkSecondary: #c14310;
 $green: #3dba50; //#49882e;
 $pinkle: #a64d79;
 
@@ -39,6 +39,7 @@ $smSpacing: 0.25em;
 $standard-margin-spacing: 15px;
 
 $radius: 4px;
+$shadow: 3px 3px 3px $lightGrey;
 
 //font family
 //decorative text
@@ -71,47 +72,6 @@ body {
   font-weight: 400;
   font-style: normal;
   min-width: 320px;
-}
-
-/***************************************
-  
-   B R E A K P O I N T    M I X I N S
-
-****************************************/
-
-@mixin breakpoint($point) {
-  @if $point == large {
-    // @media (min-width: 64.375em) {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  } @else if $point == medium {
-    //@media (min-width: 50em) and (max-width: 64.374em) {
-    @media (min-width: 992px) and (max-width: 1199px) {
-      @content;
-    }
-  } @else if $point == small {
-    // @media (max-width: 37.5em) {
-    @media (min-width: 768px) and (max-width: 991px) {
-      @content;
-    }
-  } @else if $point == xsmall {
-    @media (max-width: 767px) {
-      @content;
-    }
-  }
-}
-
-@mixin translateY($e) {
-  -webkit-transform: translateY($e);
-  -moz-transform: translateY($e);
-  -transform: translateY($e);
-}
-
-@mixin transition($e) {
-  -webkit-transition: $e;
-  -moz-transition: $e;
-  transition: $e;
 }
 
 $colorLighten: 20%;

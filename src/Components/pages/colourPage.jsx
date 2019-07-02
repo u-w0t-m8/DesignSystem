@@ -157,15 +157,30 @@ class ColourPage extends Component {
 
             <div className="row">
               <div className="col-md-6">
-                <div className="placeholder">
-                  <p>placeholder Dark text on light colours</p>
-                  <p>text with contrasting bg colour</p>
+                <div className="example">
+                  <div className="ex1">
+                    <h1>Heading 1</h1>
+                  </div>
+                  <div>
+                    example Dark text on light colours text with contrasting bg
+                    colour
+                  </div>
                 </div>
+
+                <div className="snacc-bar-success">Do</div>
               </div>
               <div className="col-md-6">
-                <div className="placeholder">
-                  placeholder light text on light colours
+                <div className="example">
+                  <div className="ex2">
+                    <h1>Heading 1</h1>
+                  </div>
+                  <div>
+                    example: Dark text on dark colours or light text on light
+                    colours
+                  </div>
                 </div>
+
+                <div className="snacc-bar-error">Do not</div>
               </div>
             </div>
           </div>

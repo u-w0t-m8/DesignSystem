@@ -1,4 +1,5 @@
 @import "config";
+@import "mixins";
 
 .content {
   // background-color: #e6e6e6;
@@ -73,6 +74,26 @@
       font-size: $iconSize;
     }
   }
+}
+
+.example {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  background-color: $white;
+  border: 2px solid $lightGrey;
+  padding: $standardSpacing;
+  border-radius: $standardRadius;
+  box-shadow: $shadow;
+  margin-top: $standard-margin-spacing;
+  margin-bottom: $standard-margin-spacing;
+}
+
+.ex1 {
+  @include exN($blueMid, $white);
+}
+.ex2 {
+  @include exN($darkSecondary, $black);
 }
 
 //placeholder

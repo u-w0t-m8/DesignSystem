@@ -13,6 +13,8 @@ class PillButton extends Component {
     this.state = {
       label: this.props.label,
       bgColor: this.props.buttonbg,
+      bordercolor: this.props.bordercolor,
+      textcolor: this.props.textcolor,
       hover: false
     };
   }
@@ -24,9 +26,7 @@ class PillButton extends Component {
 
   //change background colour upon hover
   toggleHover() {
-    //this.setState();
-    //this.setState({ hover: !this.state.hover });
-    //this.getInitialState({ hover: true });
+    this.setState();
   }
 
   // render button
@@ -34,11 +34,12 @@ class PillButton extends Component {
     return (
       <a
         onMouseEnter={this.toggleHover}
-        onMouseLeave={this.toggleHover}
+        //onMouseLeave={this.toggleHover}
         className="button"
         style={{
           backgroundColor: this.props.buttonbg,
-          color: this.props.textColour
+          border: "3px solid" + this.props.bordercolor,
+          color: this.props.color
         }}
       >
         <span className="label">
