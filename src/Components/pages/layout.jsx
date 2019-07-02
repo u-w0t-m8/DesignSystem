@@ -84,7 +84,12 @@ class Layout extends Component {
                 <RektButton
                   label={"rect. button"}
                   buttonbg={"#2e9ac5"}
-                  color={"#fff"}
+                  color={"#fff !important"}
+                />
+                <RektButton
+                  label={"rect 2 button"}
+                  bordercolor={"#212529"}
+                  color={"#000"}
                 />
               </div>
             </div>
@@ -93,12 +98,7 @@ class Layout extends Component {
               <h2>Snacc bars</h2>
               <div className="row">
                 <div className="snacc-bar-success">Success</div>
-              </div>
-
-              <div className="row">
                 <div className="snacc-bar-error">Error</div>
-              </div>
-              <div className="row">
                 <div className="snacc-bar-info">Single line snack bar</div>
               </div>
             </div>

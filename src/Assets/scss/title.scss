@@ -19,6 +19,9 @@
       @include breakpoint(small) {
         font-size: 3em;
       }
+      @include breakpoint(xsmall) {
+        font-size: 3em;
+      }
     }
   }
 }
