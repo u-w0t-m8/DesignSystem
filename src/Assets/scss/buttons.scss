@@ -54,3 +54,17 @@
 .snacc-bar-info {
   @include snacc-bar($darkGrey);
 }
+
+.icon-button {
+  position: relative;
+  display: inline-block;
+  border-radius: $radius;
+  font-size: 1.25em;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  margin-right: $standardSpacing;
+  i {
+    padding: 14px;
+  }
+}

@@ -6,7 +6,7 @@ import BannerTitle from "../bannerTitle";
 import BreakpointTable from "../breakpointLayout";
 import PillButton from "../buttons/pillButton";
 import RektButton from "../buttons/rectButtons";
-import CodeSnippet from "../codeSnippet";
+import IconButton from "../buttons/iconButton";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";
@@ -16,6 +16,7 @@ class Layout extends Component {
   constructor(props) {
     super(props);
     console.log("layout page");
+    console.log("すごい！　日本語をかけることが出来る。");
   }
   render() {
     return (
@@ -55,7 +56,7 @@ class Layout extends Component {
             <h2>Shape</h2>
             <p>
               Material surfaces have a rectangular shape by default, with 4dp
-              rounded corners. Their shape can be customized by adjusting their:{" "}
+              rounded corners. Their shape can be customized by adjusting their:
             </p>
             <ul>
               <li>Corner angles and curves</li>
@@ -109,6 +110,23 @@ class Layout extends Component {
                   key={4}
                 />
               </div>
+              <p>Icon buttons</p>
+              <IconButton icon="fas fa-plus" bgcolor="#2a81ea" color="#fff" />
+              <IconButton
+                icon="far fa-trash-alt"
+                bgcolor="#ff1755"
+                color="#fff"
+              />
+              <IconButton
+                icon="far fa-file-word"
+                bgcolor="#2a81ea"
+                color="#fff"
+              />
+              <IconButton
+                icon="far fa-file-excel"
+                bgcolor="#3dba50"
+                color="#fff"
+              />
             </div>
 
             <div className="content">
@@ -117,12 +135,6 @@ class Layout extends Component {
                 <div className="snacc-bar-success">Success</div>
                 <div className="snacc-bar-error">Error</div>
                 <div className="snacc-bar-info">Single line snack bar</div>
-              </div>
-              <div className="row">
-                <div className="example">
-                  <CodeSnippet />{" "}
-                  {/* hard coded section to make things cleaner */}
-                </div>
               </div>
             </div>
           </div>

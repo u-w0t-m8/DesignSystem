@@ -7,10 +7,6 @@ class RectangleButtons extends Component {
     color: this.props.color
   };
 
-  // constructor(props) {
-  //   super(props);
-  // }
-
   //Toggle action functions
   toggleHoverIn() {
     console.log("hover in rectangle");

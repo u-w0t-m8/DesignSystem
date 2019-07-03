@@ -13,9 +13,6 @@ class PillButton extends Component {
     hover: false
   };
 
-  // constructor(props) {
-  //   super(props);
-  // }
   //change background colour upon hover
   toggleHoverIn() {
     console.log("hover in pill");

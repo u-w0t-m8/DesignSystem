@@ -53,15 +53,16 @@ $shadow: 3px 3px 3px $lightGrey;
 $decorativeSize1: 4em;
 $iconSize: 1.2em;
 
+$bodyFont: "Quicksand", sans-serif;
+$rjbodyFont: "Roboto", sans-serif;
+
 $headerFont1: "Permanent Marker", cursive;
+$headerFont2: $rjbodyFont;
 $headerFont3: "Oswald", sans-serif;
 $headerFont4: "Raleway", sans-serif;
 $headerFont5: "Titillium Web", sans-serif;
 $headerFont6: "Dosis", sans-serif;
 $headerFont7: "Josefin Sans", sans-serif;
-
-$bodyFont: "Quicksand", sans-serif;
-$rjbodyFont: "Roboto", sans-serif;
 
 //NORMAL
 $standardRadius: $standardSpacing;

@@ -46,7 +46,8 @@ class Typography extends Component {
         "far fa-envelope",
         "far fa-clone",
         "fas fa-plus",
-        "far fa-trash-alt"
+        "far fa-trash-alt",
+        "far fa-question-circle"
       ],
       actionLabels: [
         "Stop",
@@ -55,7 +56,8 @@ class Typography extends Component {
         "send",
         "Copy action",
         "Add",
-        "Delete"
+        "Delete",
+        "Help/Info"
       ],
       projectIcons: ["fas fa-chart-area", "fas fa-database", "far fa-folder"],
       projectLabels: ["Data chart", "Database", "Project folder"]
