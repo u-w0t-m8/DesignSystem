@@ -90,10 +90,16 @@
 }
 
 .ex1 {
-  @include exN($blueMid, $white);
+  @include exN($blueMid, $yellow);
 }
 .ex2 {
-  @include exN($darkSecondary, $black);
+  @include exN($lightPrimary, $black);
+}
+.ex3 {
+  @include exN($darkSecondary, $red);
+}
+.ex4 {
+  @include exN($yellow, $lightPrimary);
 }
 
 //placeholder

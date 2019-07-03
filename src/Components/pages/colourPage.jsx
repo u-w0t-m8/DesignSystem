@@ -157,30 +157,44 @@ class ColourPage extends Component {
 
             <div className="row">
               <div className="col-md-6">
+                <div className="snacc-bar-success">Do</div>
+
                 <div className="example">
                   <div className="ex1">
                     <h1>Heading 1</h1>
                   </div>
-                  <div>
-                    example Dark text on light colours text with contrasting bg
-                    colour
+                  <div className="ex2">
+                    <h2>Heading 2</h2>
+                    <h5>subheading line here</h5>
                   </div>
-                </div>
 
-                <div className="snacc-bar-success">Do</div>
+                  <p> Example:</p>
+                  <ul>
+                    <li>Dark text on light colours text</li>
+                    <li>contrasting bg colour</li>
+                    <li>Complimenting colours</li>
+                  </ul>
+                </div>
               </div>
               <div className="col-md-6">
+                <div className="snacc-bar-error">Do not</div>
+
                 <div className="example">
-                  <div className="ex2">
+                  <div className="ex3">
                     <h1>Heading 1</h1>
                   </div>
-                  <div>
-                    example: Dark text on dark colours or light text on light
-                    colours
+                  <div className="ex4">
+                    <h2>Heading 2</h2>
+                    <h5>subheading line here</h5>
                   </div>
-                </div>
 
-                <div className="snacc-bar-error">Do not</div>
+                  <p> Example:</p>
+                  <ul>
+                    <li>Dark text on dark colours</li>
+                    <li>light text on light colours</li>
+                    <li>Colours that clash</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

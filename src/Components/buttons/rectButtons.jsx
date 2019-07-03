@@ -13,6 +13,7 @@ class RectangleButtons extends Component {
   render() {
     return (
       <a
+        href="\"
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
         className="rekt-button"
