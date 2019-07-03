@@ -206,8 +206,11 @@ class Typography extends Component {
 
             <p className="content">
               When to use Icons: cons are powerful visual helpers and should be
-              used with care. Overuse quickly results in user interfaces that
-              are visually overwhelming or distracting.
+              used with care.
+            </p>
+            <p>
+              Overuse quickly results in user interfaces that are visually
+              overwhelming or distracting.
             </p>
 
             <h3>File Icons</h3>

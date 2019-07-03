@@ -11,6 +11,7 @@ import logo from "../../Assets/images/logoDark.png";
 import bannerImg from "../../Assets/images/swatch.jpg";
 
 class ColourPage extends Component {
+  //Helper function renders colour palette component
   renderPalette(label, scss, hexCode, textColour) {
     return (
       <ColourPalette
@@ -22,7 +23,9 @@ class ColourPage extends Component {
     );
   }
 
+  //creates a collection of palettes to render
   createColourPalette = () => {
+    // arrays: colour palette collection
     let labels = [
       "Dark blue",
       "Primary Blue",
@@ -84,10 +87,14 @@ class ColourPage extends Component {
       "#a64d79"
     ];
     let palette = [];
-    var textColour = "#fff";
+    var textColour = "#fff"; //default text colour over non white background
 
+    //Assumes that all arrays will be the same in length
+    //i.e. a colour component will always have these properties.
+    // should not be null
     for (let i = 0; i < labels.length; i++) {
       //If colour is a light colour or red assign it black text else assign it white.
+      //light colours mainly contain "F" in the hexadecimal
       if (hexCodes[i].includes("F") && !labels[i].includes("Error Red")) {
         textColour = "#000";
       } else {
@@ -108,6 +115,9 @@ class ColourPage extends Component {
     return palette;
   };
 
+  /*****************************
+   *   Render function here    *
+   *****************************/
   render() {
     return (
       <div>
