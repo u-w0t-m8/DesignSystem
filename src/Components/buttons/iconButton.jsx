@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 class IconButton extends Component {
-  // ここ　で　変える　ください。
   state = { icon: this.props.icon };
 
   constructor(props) {

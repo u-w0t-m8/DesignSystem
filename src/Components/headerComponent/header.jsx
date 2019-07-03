@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"; //links
 import DClogo from "../../Assets/images/dclogodesktop.png";
 // import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from "react-bootstrap";
 
-//components
+// //components
 class Header extends Component {
   constructor(props) {
     super(props);

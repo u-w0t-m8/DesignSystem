@@ -66,6 +66,14 @@ class Layout extends Component {
 
             <h2>Spacing</h2>
             <BreakpointTable />
+            <h5>Breakpoint ranges</h5>
+            <ul>
+              <li>(max-width: 599)</li>
+              <li>(min-width: 600) and (max-width: 1023)</li>
+              <li>(min-width: 1024) and (max-width: 1439)</li>
+              <li>(min-width: 1440) and (max-width: 1919)</li>
+              <li>(min-width: 1920)</li>
+            </ul>
 
             <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
             <div className="content">
@@ -111,9 +119,9 @@ class Layout extends Component {
                 />
               </div>
               <p>Icon buttons</p>
-              <IconButton icon="fas fa-plus" bgcolor="#2a81ea" color="#fff" />
+              <IconButton icon="fas fa-plus" bgcolor="#ee6831" color="#fff" />
               <IconButton
-                icon="far fa-trash-alt"
+                icon="far fa-file-pdf"
                 bgcolor="#ff1755"
                 color="#fff"
               />

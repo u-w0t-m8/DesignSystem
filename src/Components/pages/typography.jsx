@@ -11,13 +11,14 @@ import logo from "../../Assets/images/logoDark.png";
 import bannerImg from "../../Assets/images/typographybanner.jpg";
 
 class Typography extends Component {
-  //Render Icon classes
+  //Helper function to render Icon classes
   renderIcons(iconlabel, iconCollection) {
     return <FAIcon iconlabel={iconlabel} iconCollection={iconCollection} />;
   }
 
   constructor(props) {
     super(props);
+    //collection of data
     this.state = {
       iconCollection: [
         "far fa-file",
@@ -64,13 +65,19 @@ class Typography extends Component {
     };
   }
 
+  //takes in two arrays and prints them side by side
   createIconGroup = (array1, array2) => {
+    //empty array
     let iconGroup = [];
+    //assumes that both arrays will be the same length
+    //iterates through first array
     for (let i = 0; i < array1.length; i++) {
+      //pushes each element into FAIcon component
       iconGroup.push(
         <FAIcon iconlabel={array2[i]} iconCollection={array1[i]} key={i} />
       );
     }
+    //returns populated icon group
     return iconGroup;
   };
 
