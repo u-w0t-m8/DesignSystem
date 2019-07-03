@@ -2,8 +2,6 @@
 @import "mixins";
 
 .content {
-  // background-color: #e6e6e6;
-  // border-radius: $standardSpacing;
   margin-top: 1.25em;
   font-size: 16px;
   position: relative;
@@ -28,12 +26,23 @@
   }
 }
 
+// .content-code {
+//   display: inline-block;
+//   background-color: $lightGrey;
+//   border-radius: $standardRadius;
+//   padding: $standardSpacing;
+
+//   pre {
+//     margin: 0;
+//   }
+// }
+
 // styles for quotes
 .quote {
-  padding: 3em;
+  padding: 2.25em;
   text-align: center;
   font-size: 2em;
-  font-family: $headerFont1;
+  font-family: $headerFont7;
   color: $grey;
 }
 

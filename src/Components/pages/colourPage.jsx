@@ -7,7 +7,7 @@ import BannerTitle from "../bannerTitle";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";
-// import bannerImg from "../../Assets/images/colourpg.jpg";
+//import bannerImg from "../../Assets/images/colourpg.jpg";
 import bannerImg from "../../Assets/images/swatch.jpg";
 
 class ColourPage extends Component {
@@ -118,6 +118,7 @@ class ColourPage extends Component {
         />
         <div className="container">
           <div className="content">
+            <h1>Colour</h1>
             <p>
               Colour is everywhere. It can communicate a message without using
               words and can evoke emotion.
@@ -199,14 +200,13 @@ class ColourPage extends Component {
             </div>
           </div>
 
-          <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
-
           <div className="content" />
+        </div>
 
-          {/* dynamically rendering from array */}
-          <div className="col-md-12">
-            <div className="row">{this.createColourPalette()}</div>
-          </div>
+        {/* dynamically rendering from array */}
+        <div className="col-md-12">
+          <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
+          <div className="row">{this.createColourPalette()}</div>
         </div>
       </div>
     );

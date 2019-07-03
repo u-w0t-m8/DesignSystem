@@ -24,6 +24,9 @@
   border-radius: 4px;
   margin: 0.5em;
   text-align: center;
+  :hover {
+    text-decoration: none !important;
+  }
 
   .label {
     font-family: $rjbodyFont;
@@ -35,6 +38,9 @@
     font-weight: 700;
     letter-spacing: 0.25em;
   }
+}
+.rekt-button:hover {
+  text-decoration: none !important;
 }
 
 .snacc-bar-success {

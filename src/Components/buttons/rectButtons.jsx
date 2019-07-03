@@ -6,16 +6,26 @@ class RectangleButtons extends Component {
     border: this.props.bordercolor,
     color: this.props.color
   };
+
   // constructor(props) {
   //   super(props);
-  //   console.log(this.props.color);
   // }
+
+  //Toggle action functions
+  toggleHoverIn() {
+    console.log("hover in rectangle");
+  }
+
+  toggleHoverOut() {
+    console.log("hover out rectangle");
+  }
+
   render() {
     return (
       <a
-        href="\"
-        onMouseEnter={this.toggleHover}
-        onMouseLeave={this.toggleHover}
+        href="\layout"
+        onMouseEnter={this.toggleHoverIn}
+        onMouseLeave={this.toggleHoverOut}
         className="rekt-button"
         style={{
           backgroundColor: this.props.buttonbg,

@@ -122,7 +122,8 @@ class Typography extends Component {
               </li>
             </ul>
           </div>
-
+        </div>
+        <div className="container-fluid">
           <ProjectTitle
             logo={logo}
             title={"Report Jazz Typography text collection"}

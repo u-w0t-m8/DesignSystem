@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
+//component imports
 import ProjectTitle from "../projectTitle";
 import BannerTitle from "../bannerTitle";
 import BreakpointTable from "../breakpointLayout";
 import PillButton from "../buttons/pillButton";
 import RektButton from "../buttons/rectButtons";
+import CodeSnippet from "../codeSnippet";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";
@@ -84,23 +86,27 @@ class Layout extends Component {
                   buttonbg={"#ff1755"}
                   bordercolor={"#ff1755"}
                   color={"#fff"}
+                  key={1}
                 />
                 <PillButton
                   label={"Round Pill Empty"}
                   buttonbg={"rgba(255,255,255,0)"}
                   bordercolor={"#ee6831"}
                   color={"#ee6831"}
+                  key={2}
                 />
                 <RektButton
                   label={"rect. button"}
                   buttonbg={"#2e9ac5"}
                   bordercolor={"#2e9ac5"}
                   color={"#ffffff"}
+                  key={3}
                 />
                 <RektButton
                   label={"rect 2 button"}
                   bordercolor={"#212529"}
                   color={"#000000"}
+                  key={4}
                 />
               </div>
             </div>
@@ -111,6 +117,12 @@ class Layout extends Component {
                 <div className="snacc-bar-success">Success</div>
                 <div className="snacc-bar-error">Error</div>
                 <div className="snacc-bar-info">Single line snack bar</div>
+              </div>
+              <div className="row">
+                <div className="example">
+                  <CodeSnippet />{" "}
+                  {/* hard coded section to make things cleaner */}
+                </div>
               </div>
             </div>
           </div>
