@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BPTableRow from "../Components/bpTableCell";
+import BPTableRow from "../blockComponents/bpTableCell";
 
 class BreakpointTable extends Component {
   render() {

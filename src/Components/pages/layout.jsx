@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 //component imports
-import ProjectTitle from "../projectTitle";
-import BannerTitle from "../bannerTitle";
-import BreakpointTable from "../breakpointLayout";
+import ProjectTitle from "../blockComponents/projectTitle";
+import BannerTitle from "../blockComponents/bannerTitle";
+import BreakpointTable from "../blockComponents/breakpointLayout";
 import PillButton from "../buttons/pillButton";
 import RektButton from "../buttons/rectButtons";
 import IconButton from "../buttons/iconButton";

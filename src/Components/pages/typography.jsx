@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 //component imports
-import ProjectTitle from "../projectTitle";
-import BannerTitle from "../bannerTitle";
-import TypoPalette from "../typographyPalette";
-import FAIcon from "../fontAwesomeCollection";
+import ProjectTitle from "../blockComponents/projectTitle";
+import BannerTitle from "../blockComponents/bannerTitle";
+import TypoPalette from "../blockComponents/typographyPalette";
+import FAIcon from "../blockComponents/fontAwesomeCollection";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";

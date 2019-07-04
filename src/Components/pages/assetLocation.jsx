@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
 //imports
-import ProjectTitle from "../projectTitle";
-import BannerTitle from "../bannerTitle";
+import ProjectTitle from "../blockComponents/projectTitle";
+import BannerTitle from "../blockComponents/bannerTitle";
 import logo from "../../Assets/images/logoDark.png";
+
 import bannerImg from "../../Assets/images/bouquet.jpg";
 
 class AssetLocation extends Component {

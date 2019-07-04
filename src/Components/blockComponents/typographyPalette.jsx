@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 //testing
-// import Toggle from "../Components/toggle";
+// import Toggle from "../Components/blockComponents/toggle";
 
 class TypoPalette extends Component {
   constructor(props) {

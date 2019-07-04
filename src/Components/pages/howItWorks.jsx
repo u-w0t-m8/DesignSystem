@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import BannerTitle from "../bannerTitle";
+import BannerTitle from "../blockComponents/bannerTitle";
 
 //logo import
 import bannerImg from "../../Assets/images/cute.jpg";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TextInput from "../Components/textInput";
+import TextInput from "../blockComponents/textInput";
 
 class FormComponent extends Component {
   state = {};

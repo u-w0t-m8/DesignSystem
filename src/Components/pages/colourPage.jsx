@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 //components
-import ColourPalette from "../colourPalette";
-import ProjectTitle from "../projectTitle";
-import BannerTitle from "../bannerTitle";
+import ColourPalette from "../blockComponents/colourPalette";
+import ProjectTitle from "../blockComponents/projectTitle";
+import BannerTitle from "../blockComponents/bannerTitle";
 
 //logo import
 import logo from "../../Assets/images/logoDark.png";

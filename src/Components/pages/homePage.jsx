@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-//import bgImg from "../../Assets/images/layers.png";
 
 //components
-import FormComponent from "../formComponent";
+import FormComponent from "../blockComponents/formComponent";
 
 class Homepage extends Component {
   //state = {  }
