@@ -137,6 +137,8 @@ class Typography extends Component {
             logo={logo}
             title={"Report Jazz Typography text collection"}
           />
+        </div>
+        <div className="container">
           <div className="content">
             <TypoPalette
               fontType={"Heading 1"}

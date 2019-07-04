@@ -76,6 +76,10 @@ body {
   font-style: normal;
   min-width: 320px;
   height: 100%;
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 $colorLighten: 20%;
