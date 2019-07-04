@@ -15,8 +15,6 @@ import bannerImg from "../../Assets/images/layout.jpg";
 class Layout extends Component {
   constructor(props) {
     super(props);
-    console.log("layout page");
-    console.log("すごい！　日本語をかけることが出来る。");
   }
   render() {
     return (

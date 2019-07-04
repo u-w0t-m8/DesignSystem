@@ -13,7 +13,8 @@ class MenuToggleButton extends Component {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn
     }));
-    //console.log("clicked"); test code
+    console.log("あらー、　見つけました！　よくできました！");
+    console.log("クリックしました。");
   }
 
   render() {

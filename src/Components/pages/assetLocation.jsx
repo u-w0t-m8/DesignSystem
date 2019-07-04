@@ -5,7 +5,7 @@ import ProjectTitle from "../blockComponents/projectTitle";
 import BannerTitle from "../blockComponents/bannerTitle";
 import logo from "../../Assets/images/logoDark.png";
 
-import bannerImg from "../../Assets/images/bouquet.jpg";
+import bannerImg from "../../Assets/images/storage.jpg";
 
 class AssetLocation extends Component {
   render() {

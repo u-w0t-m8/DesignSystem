@@ -37,51 +37,37 @@ class TypoPalette extends Component {
         </div>
 
         <div className="content-code col-md-12">
-          {this.props.ffamily == null ? (
-            " "
-          ) : (
+          {this.props.ffamily == null ? null : (
             <pre>
               <code>font-family: {this.props.ffamily}; </code>
             </pre>
           )}
-          {this.props.fsize == null ? (
-            " "
-          ) : (
+          {this.props.fsize == null ? null : (
             <pre>
               <code>font-size: {this.props.fsize}; </code>
             </pre>
           )}
-          {this.props.transform == null ? (
-            " "
-          ) : (
+          {this.props.transform == null ? null : (
             <pre>
               <code>text-transform: {this.props.transform}; </code>
             </pre>
           )}
-          {this.props.fweight == null ? (
-            " "
-          ) : (
+          {this.props.fweight == null ? null : (
             <pre>
               <code>font-weight: {this.props.fweight}; </code>
             </pre>
           )}
-          {this.props.lHeight == null ? (
-            " "
-          ) : (
+          {this.props.lHeight == null ? null : (
             <pre>
               <code>line-height: {this.props.lheight}; </code>
             </pre>
           )}
-          {this.props.letterSpace == null ? (
-            " "
-          ) : (
+          {this.props.letterSpace == null ? null : (
             <pre>
               <code>letter-spacing: {this.props.letterSpace}; </code>
             </pre>
           )}
-          {this.props.textcolor == null ? (
-            " "
-          ) : (
+          {this.props.textcolor == null ? null : (
             <pre>
               <code>color: {this.props.textcolor}</code>
             </pre>
