@@ -7,25 +7,6 @@ import MenuToggle from "./menuToggle";
 
 // //components
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: true, isOpen: false };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn,
-      isOpen: !state.isOpen
-    }));
-    console.log("this has been clicked");
-  }
-
-  toggleCollapse = () => {
-    console.log("test");
-    this.setState({ isOpen: !this.state.isOpen });
-  };
-
   render() {
     return (
       <header>
