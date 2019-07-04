@@ -40,7 +40,7 @@ $smSpacing: 0.25em;
 $standard-margin-spacing: 15px;
 
 $radius: 4px;
-$shadow: 3px 3px 3px $lightGrey;
+$shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 
 //font family
 //decorative text
@@ -74,6 +74,7 @@ body {
   font-weight: 400;
   font-style: normal;
   min-width: 320px;
+  height: 100%;
 }
 
 $colorLighten: 20%;

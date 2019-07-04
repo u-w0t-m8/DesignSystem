@@ -8,12 +8,18 @@ class PillButton extends Component {
     border: this.props.bordercolor,
     color: this.props.textcolor
   };
-  //get initial state of button
-  state = {
-    hover: false
-  };
 
-  //change background colour upon hover
+  // constructor(props) {
+  //   super(props);
+  //   state = {
+  //     hover: false,
+  //     buttonbg: this.props.buttonbg,
+  //     bordercolor: this.props.bordercolor,
+  //     textcolor: this.props.textcolor
+  //   };
+  // }
+  //get initial state of button
+
   toggleHoverIn() {
     console.log("hover in pill");
   }
@@ -21,6 +27,7 @@ class PillButton extends Component {
   toggleHoverOut() {
     console.log("hover out pill");
   }
+
   // render button
   render() {
     return (

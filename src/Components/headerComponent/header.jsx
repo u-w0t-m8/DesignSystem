@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"; //links
 import DClogo from "../../Assets/images/dclogodesktop.png";
 // import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from "react-bootstrap";
 
+import MenuToggle from "./menuToggle";
+
 // //components
 class Header extends Component {
   constructor(props) {
@@ -28,6 +30,7 @@ class Header extends Component {
     return (
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark bs-navbar-collapse">
+          <MenuToggle />
           <Link to="/">
             <img
               src={DClogo}
@@ -35,46 +38,6 @@ class Header extends Component {
               alt="logo"
             />
           </Link>
-
-          <button
-            onClick={this.handleClick}
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            {this.state.isToggleOn ? (
-              ""
-            ) : (
-              <div
-                className="collapse navbar-collapse "
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav mr-auto">
-                  <li className="nav-item">
-                    <Link to="/colourPage">Colour</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/typography">Typography</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/layout">Layout</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/assetLocation">Asset Locations</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/howItWorks">How it works</Link>
-                  </li>
-                </ul>
-              </div>
-            )}
-
-            <span className="navbar-toggler-icon" />
-          </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
