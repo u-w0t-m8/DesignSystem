@@ -30,18 +30,6 @@
   }
 }
 
-@mixin translateY($e) {
-  -webkit-transform: translateY($e);
-  -moz-transform: translateY($e);
-  -transform: translateY($e);
-}
-
-@mixin transition($e) {
-  -webkit-transition: $e;
-  -moz-transition: $e;
-  transition: $e;
-}
-
 //ISSA SNACC MIXIN
 @mixin snacc-bar($bgColor) {
   font-family: $rjbodyFont;
@@ -49,7 +37,8 @@
   border-radius: $radius;
   color: $white;
   min-height: 48px;
-  width: 344px;
+  min-width: 344px;
+  width: 100%;
   padding: 16px;
   margin-bottom: 16px;
   margin-right: 16px;

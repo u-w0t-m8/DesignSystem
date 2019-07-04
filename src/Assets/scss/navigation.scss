@@ -19,7 +19,10 @@
     padding-left: 1em;
   }
   .nav-item {
-    margin: 0.5em;
+    padding: $standardSpacing;
+    justify-content: center;
+    font-size: 1.25em;
+
     a {
       color: $white;
     }
@@ -58,6 +61,7 @@
       list-style: none;
       text-decoration: none;
       display: flex;
+
       a {
         color: $white;
         text-decoration: none;
