@@ -36,12 +36,28 @@
 }
 
 // Styles for breakpoint table on font page
-.breakpoint-table {
-  overflow-x: scroll;
-  margin-top: $standard-margin-spacing;
-  margin-bottom: $standard-margin-spacing;
-  td {
-    padding: 1em;
+.table-wrapper {
+  overflow-x: auto !important;
+  .breakpoint-table {
+    // background: $lightGrey;
+    border-radius: $standardRadius;
+
+    margin-top: $standard-margin-spacing;
+    margin-bottom: $standard-margin-spacing;
+    th {
+      padding: 1em;
+      font-family: $headerFont3;
+      background: $lightPrimary;
+    }
+    td {
+      padding: 1em;
+    }
+    tr {
+      background: $pastelPrimary; //$lightGrey;
+    }
+    tr:nth-child(even) {
+      background-color: $white;
+    }
   }
 }
 

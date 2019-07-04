@@ -65,7 +65,9 @@ class Layout extends Component {
             <p>The size of shape changes can be subtle or more significant.</p>
 
             <h2>Spacing</h2>
-            <BreakpointTable />
+            <div className="table-wrapper">
+              <BreakpointTable />
+            </div>
             <h5>Breakpoint ranges</h5>
             <ul>
               <li>(max-width: 599)</li>

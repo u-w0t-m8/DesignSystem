@@ -9,23 +9,17 @@ class PillButton extends Component {
     color: this.props.textcolor
   };
 
-  // constructor(props) {
-  //   super(props);
-  //   state = {
-  //     hover: false,
-  //     buttonbg: this.props.buttonbg,
-  //     bordercolor: this.props.bordercolor,
-  //     textcolor: this.props.textcolor
-  //   };
-  // }
-  //get initial state of button
+  constructor(props) {
+    super(props);
+    this.state = { mouseOverIn: false, mouseOverOut: true };
+    this.toggleHoverIn = this.toggleHoverIn.bind(this);
+  }
 
   toggleHoverIn() {
     console.log("hover in pill");
-  }
-
-  toggleHoverOut() {
-    console.log("hover out pill");
+    this.setState(state => ({
+      mouseOverIn: !state.mouseOverIn
+    }));
   }
 
   // render button
@@ -34,7 +28,7 @@ class PillButton extends Component {
       <a
         href="/layout"
         onMouseEnter={this.toggleHoverIn}
-        onMouseLeave={this.toggleHoverOut}
+        // onMouseLeave={this.toggleHoverOut}
         className="button"
         style={{
           backgroundColor: this.props.buttonbg,
