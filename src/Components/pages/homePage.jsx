@@ -20,7 +20,7 @@ class Homepage extends Component {
             current and future projects. (Internal use only.)
           </p>
           <p>How to use the design page</p>
-          <FormComponent />
+          {/* <FormComponent /> */}
         </div>
       </div>
     );

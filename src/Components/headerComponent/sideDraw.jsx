@@ -6,11 +6,10 @@ const sideDraw = props => (
   <nav className="side-draw">
     <ul>
       <li>
-        {" "}
         <Link to="/">
           <img
             src={DClogo}
-            className="d-inline-block align-top logo"
+            className="d-inline-block align-top side-logo"
             alt="logo"
           />
         </Link>

@@ -39,7 +39,6 @@
 .table-wrapper {
   overflow-x: auto !important;
   .breakpoint-table {
-    // background: $lightGrey;
     border-radius: $standardRadius;
 
     margin-top: $standard-margin-spacing;
@@ -53,10 +52,10 @@
       padding: 1em;
     }
     tr {
-      background: $pastelPrimary; //$lightGrey;
+      background: $pastelPrimary;
     }
     tr:nth-child(even) {
-      background-color: $white;
+      background-color: lighten($lightGrey, 8%); //$white; //
     }
   }
 }

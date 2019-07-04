@@ -72,6 +72,12 @@
 }
 
 .menu-toggle {
+  @include breakpoint(large) {
+    display: none;
+  }
+  @include breakpoint(medium) {
+    display: none;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -102,6 +108,7 @@
   left: 0;
   width: 70%;
   max-width: 344px;
+  min-width: 220px;
   z-index: 200;
   justify-content: center;
   ul {
@@ -112,14 +119,24 @@
     text-align: left;
     li {
       padding-top: $standardSpacing;
-    }
-    a {
-      color: $white;
-    }
-    a:hover,
-    a:active {
-      color: $primaryColour; //testing colour
-      text-decoration: none;
+      .side-logo {
+        margin-top: $standardSpacing;
+        @include breakpoint(xsmall) {
+          height: 42px;
+        }
+      }
+      a {
+        color: $white;
+        font-size: 1.25em;
+        @include breakpoint(xsmall) {
+          font-size: 1em;
+        }
+      }
+      a:hover,
+      a:active {
+        color: $primaryColour; //testing colour
+        text-decoration: none;
+      }
     }
   }
 }

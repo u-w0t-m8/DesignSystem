@@ -70,11 +70,11 @@ class Layout extends Component {
             </div>
             <h5>Breakpoint ranges</h5>
             <ul>
-              <li>(max-width: 599)</li>
-              <li>(min-width: 600) and (max-width: 1023)</li>
-              <li>(min-width: 1024) and (max-width: 1439)</li>
-              <li>(min-width: 1440) and (max-width: 1919)</li>
-              <li>(min-width: 1920)</li>
+              <li>Extra Small: (max-width: 599)</li>
+              <li>Small: (min-width: 600) and (max-width: 1023)</li>
+              <li>Medium: (min-width: 1024) and (max-width: 1439)</li>
+              <li>Large: (min-width: 1440) and (max-width: 1919)</li>
+              <li>Extra large: (min-width: 1920)</li>
             </ul>
 
             <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
