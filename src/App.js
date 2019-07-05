@@ -15,6 +15,9 @@ import Layout from "./Components/pages/layout";
 import HowItWorks from "./Components/pages/howItWorks";
 import AssetLocation from "./Components/pages/assetLocation";
 
+/*************************************************
+ *  F U N C T I O N  A P P  B E G I N S  H E R E  *
+ **************************************************/
 function App() {
   return (
     <Router>

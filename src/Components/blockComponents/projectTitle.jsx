@@ -5,21 +5,6 @@ class ProjectTitle extends Component {
     logo: this.props.logo,
     title: this.props.title
   };
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     logo: null,
-  //     title: null
-  //   };
-
-  //   if (this.props.logo != null) {
-  //     this.state.logo = this.props.logo;
-  //   }
-
-  //   if (this.props.title != null) {
-  //     this.state.title = this.props.title;
-  //   }
-  // }
 
   render() {
     return (

@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import SideDraw from "./sideDraw";
 import Backdrop from "./backdrop";
-import sideDraw from "./sideDraw";
 
 class MenuToggleButton extends Component {
   constructor(props) {
     super(props);
+    //initialise isMenuOpen
     this.state = { isMenuOpen: false };
+    //Bind handle click
     this.handleClick = this.handleClick.bind(this);
   }
+
+  //tip use a function in setState
+  //React does not guarentee state changes are applied immediately
+  //this.state may not be what you think it is
 
   handleClick() {
     this.setState(prevState => ({
@@ -25,16 +30,19 @@ class MenuToggleButton extends Component {
 
   render() {
     return (
-      <button className="menu-toggle" onClick={this.handleClick}>
+      <button className="menu-toggle" onClick={() => this.handleClick()}>
         <div className="togglebuttonline" />
         <div className="togglebuttonline" />
         <div className="togglebuttonline" />
+        {/* checks to see if the Menu state is true or false */}
         {this.state.isMenuOpen ? (
+          // if menu state is true, render side draw and backdrop
           <div>
             <SideDraw />
             <Backdrop />
           </div>
-        ) : null}
+        ) : //else if menu is closed do not render anything return null
+        null}
       </button>
     );
   }

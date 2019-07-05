@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import TextInput from "../blockComponents/textInput";
 
 class FormComponent extends Component {
-  state = {};
   constructor() {
     super();
 
