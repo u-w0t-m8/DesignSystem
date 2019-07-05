@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 //components
-import FormComponent from "../blockComponents/formComponent";
+//import FormComponent from "../blockComponents/formComponent";
 
 class Homepage extends Component {
   //state = {  }

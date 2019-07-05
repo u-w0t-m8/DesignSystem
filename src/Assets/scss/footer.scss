@@ -7,6 +7,9 @@ footer {
     a {
       color: $white;
     }
+    a:hover {
+      color: $orange;
+    }
   }
   text-align: center;
   .footer-copyright {
