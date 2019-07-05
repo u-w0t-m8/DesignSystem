@@ -1,20 +1,26 @@
 import React, { Component } from "react";
 import SideDraw from "./sideDraw";
 import Backdrop from "./backdrop";
+import sideDraw from "./sideDraw";
 
 class MenuToggleButton extends Component {
   constructor(props) {
     super(props);
-    this.state = { isToggleOn: true };
+    this.state = { isMenuOpen: false };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
+    this.setState(prevState => ({
+      isMenuOpen: !prevState.isMenuOpen
     }));
-    console.log("あらー、　見つけました！　よくできました！");
-    console.log("クリックしました。");
+
+    if (this.state.isMenuOpen) {
+      console.log("あらー、　見つけました！　よくできました！");
+      console.log("メニュー　を　開ける。");
+    } else {
+      console.log("メニュー　を　閉める。");
+    }
   }
 
   render() {
@@ -23,13 +29,12 @@ class MenuToggleButton extends Component {
         <div className="togglebuttonline" />
         <div className="togglebuttonline" />
         <div className="togglebuttonline" />
-        {this.state.isToggleOn ? (
-          ""
-        ) : (
+        {this.state.isMenuOpen ? (
           <div>
-            <SideDraw /> <Backdrop />
+            <SideDraw />
+            <Backdrop />
           </div>
-        )}
+        ) : null}
       </button>
     );
   }

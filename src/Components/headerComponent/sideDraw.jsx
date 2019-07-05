@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"; //links won't work if you get rid of the unused
 import DClogo from "../../Assets/images/dclogodesktop.png";
 

@@ -112,6 +112,7 @@ class ColourPage extends Component {
       );
     }
     //return array of colourpalette
+
     return palette;
   };
 
@@ -214,8 +215,9 @@ class ColourPage extends Component {
         </div>
 
         {/* dynamically rendering from array */}
-        <div className="col-md-12">
-          <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
+        <ProjectTitle logo={logo} title={"Report Jazz Colour palette"} />
+
+        <div className="container">
           <div className="row">{this.createColourPalette()}</div>
         </div>
       </div>
