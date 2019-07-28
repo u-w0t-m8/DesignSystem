@@ -1,0 +1,15 @@
+@import "config";
+@import "mixins";
+
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+
+  input {
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: none;
+    margin-top: $standardSpacing;
+    padding: $standardSpacing/2;
+  }
+}

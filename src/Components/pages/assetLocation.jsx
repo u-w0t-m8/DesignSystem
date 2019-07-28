@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import ProjectTitle from "../blockComponents/projectTitle";
 import BannerTitle from "../blockComponents/bannerTitle";
 import logo from "../../Assets/images/logoDark.png";
+import Formtest from "../formComponents/formtest";
 
 import bannerImg from "../../Assets/images/storage.jpg";
 
@@ -47,6 +48,10 @@ class AssetLocation extends Component {
               File asset location for periskope
               {/* </a> */}
             </span>
+          </div>
+          <div className="forms">
+            <h3>Form fields</h3>
+            <Formtest />
           </div>
         </div>
       </div>

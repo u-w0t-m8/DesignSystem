@@ -37,7 +37,10 @@ class HowItWorks extends Component {
               <div className="placeholder">Placeholder</div>
             </div>
             <div className="row">
-              <h3>Wireframes</h3>
+              <div className="col-md-12">
+                <h3>Wireframes</h3>
+                <p>Collection of components</p>
+              </div>
             </div>
           </div>
         </div>
