@@ -90,7 +90,8 @@ class Layout extends Component {
           <div className="content">
             <h2>Button layout</h2>
             <p>button variations and purposes</p>
-            <div className="row">
+            <div className="button-collection">
+              {/* test batch */}
               <PillButton
                 label={"Round Pill Button"}
                 buttonbg={"#ff1755"}
@@ -119,24 +120,33 @@ class Layout extends Component {
                 key={4}
               />
             </div>
-            <p>Icon buttons</p>
-            <IconButton icon="fas fa-plus" bgcolor="#ee6831" color="#fff" />
-            <IconButton icon="far fa-file-pdf" bgcolor="#ff1755" color="#fff" />
-            <IconButton
-              icon="far fa-file-word"
-              bgcolor="#2a81ea"
-              color="#fff"
-            />
-            <IconButton
-              icon="far fa-file-excel"
-              bgcolor="#3dba50"
-              color="#fff"
-            />
+          </div>
+          <div className="content">
+            <div className="icon-collection">
+              <p>Icon buttons</p>
+
+              <IconButton icon="fas fa-plus" bgcolor="#ee6831" color="#fff" />
+              <IconButton
+                icon="far fa-file-pdf"
+                bgcolor="#ff1755"
+                color="#fff"
+              />
+              <IconButton
+                icon="far fa-file-word"
+                bgcolor="#2a81ea"
+                color="#fff"
+              />
+              <IconButton
+                icon="far fa-file-excel"
+                bgcolor="#3dba50"
+                color="#fff"
+              />
+            </div>
           </div>
 
           <div className="content">
             <h2>Snacc bars</h2>
-            <div className="row">
+            <div className="snacc-bar-collection">
               <div className="snacc-bar-success">Success</div>
               <div className="snacc-bar-error">Error</div>
               <div className="snacc-bar-info">Single line snack bar</div>

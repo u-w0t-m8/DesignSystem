@@ -23,6 +23,8 @@ class RectangleButtons extends Component {
     console.log("hover out rectangle");
   }
 
+  /**** render button *****/
+
   render() {
     return (
       <a

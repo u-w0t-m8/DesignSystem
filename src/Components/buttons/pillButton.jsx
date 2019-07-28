@@ -2,24 +2,30 @@ import React, { Component } from "react";
 
 class PillButton extends Component {
   //parsed in styles for button
-
   constructor(props) {
     super(props);
-    this.state = { mouseOverIn: false, mouseOverOut: true };
-    this.toggleHoverIn = this.toggleHoverIn.bind(this);
+    this.state = { hover: false };
+    // this.toggleHoverIn = this.toggleHoverIn.bind(this);
+    // this.toggleHoverOut = this.toggleHoverOut.bind(this);
   }
 
   toggleHoverIn() {
-    console.log("hover in pill");
-    this.setState(state => ({
-      mouseOverIn: !state.mouseOverIn
-    }));
+    // this.setState((prevState, props) => {
+    //   return {
+    //     toggleHoverIn: !prevState.toggleHoverIn
+    //   };
+    // });
+    console.log("pill hover IN = ");
   }
 
-  toggleHoverOut() {
-    console.log("hover out pill");
+  toggleHoverout() {
+    // this.setState((prevState, props) => {
+    //   return { toggleHoverOut: !prevState.toggleHoverOut };
+    // });
+    console.log("pill hover OUT");
   }
-  // render button
+  /**** render button *****/
+
   render() {
     return (
       <a
