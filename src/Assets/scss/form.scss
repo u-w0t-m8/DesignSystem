@@ -5,11 +5,34 @@
   display: flex;
   flex-wrap: wrap;
 
-  input {
-    border-radius: 4px;
-    width: 100%;
-    box-shadow: none;
-    margin-top: $standardSpacing;
-    padding: $standardSpacing/2;
+  input[type="text"] {
+    display: none;
   }
+  border: 2px solid $lightGrey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid $primaryColour !important;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+input[type=":checked"]:after {
+  content: "\2714";
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #99a1a7;
+}
+
+.checkbox {
+  border: 2px solid $primaryColour !important;
+  padding: 15px;
 }

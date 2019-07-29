@@ -4,7 +4,9 @@ import React, { Component } from "react";
 import ProjectTitle from "../blockComponents/projectTitle";
 import BannerTitle from "../blockComponents/bannerTitle";
 import logo from "../../Assets/images/logoDark.png";
+//form imports
 import Formtest from "../formComponents/formtest";
+import Checkbox from "../formComponents/checkbox";
 
 import bannerImg from "../../Assets/images/storage.jpg";
 
@@ -21,9 +23,9 @@ class AssetLocation extends Component {
         />
 
         <div className="container">
-          <div className="row">
+          {/* <div className="row">
             <div className="placeholder">Placeholder</div>
-          </div>
+          </div> */}
           <ProjectTitle logo={logo} />
           <div className="file-location-component">
             <span>
@@ -52,6 +54,12 @@ class AssetLocation extends Component {
           <div className="forms">
             <h3>Form fields</h3>
             <Formtest />
+            <Formtest />
+            <Formtest />
+
+            <Checkbox label="checkbox 1" />
+            <Checkbox label="checkbox 2" />
+            <Checkbox label="checkbox 3" />
           </div>
         </div>
       </div>
