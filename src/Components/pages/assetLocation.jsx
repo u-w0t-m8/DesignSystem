@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import ProjectTitle from "../blockComponents/projectTitle";
 import BannerTitle from "../blockComponents/bannerTitle";
 import logo from "../../Assets/images/logoDark.png";
+
 //form imports
 import Formtest from "../formComponents/formtest";
 import Checkbox from "../formComponents/checkbox";
@@ -21,12 +22,14 @@ class AssetLocation extends Component {
             "Links to images, logos and anything graphic related in one place"
           }
         />
+        <div className="container">
+          <div className="row">
+            <div className="placeholder">Placeholder</div>
+          </div>
+        </div>
+        <ProjectTitle logo={logo} />
 
         <div className="container">
-          {/* <div className="row">
-            <div className="placeholder">Placeholder</div>
-          </div> */}
-          <ProjectTitle logo={logo} />
           <div className="file-location-component">
             <span>
               <i className="far fa-folder" />{" "}
@@ -57,9 +60,11 @@ class AssetLocation extends Component {
             <Formtest />
             <Formtest />
 
-            <Checkbox label="checkbox 1" />
-            <Checkbox label="checkbox 2" />
-            <Checkbox label="checkbox 3" />
+            <div className="checkbox-collection">
+              <Checkbox uniqueID="1" label="checkbox 1" />
+              <Checkbox uniqueID="2" label="checkbox 2" />
+              <Checkbox uniqueID="3" label="checkbox 3" />
+            </div>
           </div>
         </div>
       </div>

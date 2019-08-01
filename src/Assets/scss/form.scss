@@ -18,21 +18,42 @@
 
 input[type="checkbox"] {
   appearance: none;
-  border: 2px solid $primaryColour !important;
-  border-radius: 4px;
-  padding: 15px;
+  //display: none;
 }
 
-input[type=":checked"]:after {
-  content: "\2714";
-  font-size: 14px;
-  position: absolute;
-  top: 0px;
-  left: 3px;
-  color: #99a1a7;
-}
+// input[type=":checked"]:after {
+//   content: "\2714";
+//   font-size: 14px;
+//   position: absolute;
+//   top: 0px;
+//   left: 3px;
+//   color: #99a1a7;
+// }
 
-.checkbox {
-  border: 2px solid $primaryColour !important;
-  padding: 15px;
+.checkbox-collection {
+  align-content: center;
+  align-items: center;
+
+  .check-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $standardSpacing;
+
+    .checkbox[type="checkbox"] {
+      align-items: center;
+      border: 2px solid $primaryColour !important;
+      border-radius: 2px;
+      padding: 10px !important;
+      margin-right: 4px;
+    }
+
+    .checkbox[type=":checked"] {
+      border: 2px solid $primaryColour !important;
+      content: "\2714";
+      font-size: 14px;
+      border-radius: 2px;
+      background-color: $primaryColour;
+      padding: 10px !important;
+    }
+  }
 }
